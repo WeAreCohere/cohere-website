@@ -1,0 +1,11 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  overflow-y: hidden;
+  background-color: rgba($cohere-black, 0.95);
+  min-height: 100%;
+  width: 70vw;
+  //   display: none;
+}

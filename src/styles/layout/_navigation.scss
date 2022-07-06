@@ -1,0 +1,78 @@
+.navigation {
+  &__nav {
+    height: 11vh;
+    background-color: $cohere-blue;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    padding-left: 3rem;
+    height: 5rem;
+    width: 10rem;
+    transition: all 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    // padding-right: 3rem;
+    // flex-grow: 0.2; /*change this*/
+
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin: 2.5rem;
+    transition: all 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05) translateY(-0.3rem);
+    }
+
+    &:active,
+    &:focus {
+      transform: scale(1) translateY(0.3rem);
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 2.4rem;
+      color: $color-white;
+      font-weight: 400;
+    }
+  }
+
+  &__btn {
+    font-size: 5rem;
+    margin-right: 3rem;
+    color: $cohere-black;
+    display: none;
+    transition: all 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05) translateY(-0.3rem);
+    }
+
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+}

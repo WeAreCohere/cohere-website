@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Morganite";
+  src: url(../../fonts/Morganite-Bold.ttf) format("truetype");
+}
+
+h1 {
+  font-family: $font-morganite;
+  font-size: 10rem;
+}
+
+h2 {
+  font-family: $font-morganite;
+  font-size: 6.25rem;
+}
+
+h3 {
+  font-family: $font-morganite;
+  font-size: 4.4rem;
+}
+
+h4 {
+  font-family: $font-spacegrotesk;
+  font-size: 2.4rem !important;
+}
+
+p {
+  font-family: $font-spacegrotesk;
+  font-size: 2rem !important;
+}
+
+button {
+  font-family: $font-spacegrotesk;
+}
+
+body {
+  font-family: $font-spacegrotesk;
+  font-weight: 400;
+  line-height: 1.7;
+}
