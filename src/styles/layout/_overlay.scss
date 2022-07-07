@@ -6,6 +6,35 @@
   overflow-y: hidden;
   background-color: rgba($cohere-black, 0.95);
   min-height: 100%;
-  width: 70vw;
-  //   display: none;
+  display: none;
+  width: 0;
+  transition: 0.5s;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__close {
+    font-size: 3rem;
+    margin-left: 2.5rem;
+
+    color: $color-white;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+
+    &:active,
+    &:focus {
+      transform: scale(1) translateY(0.3rem);
+    }
+  }
 }

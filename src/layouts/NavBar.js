@@ -1,8 +1,13 @@
+import React, { useContext } from "react";
 import logo from "../images/clwhite.webp";
 import NavList from "./NavList";
 import { FaBars } from "react-icons/fa";
+import { OverlayContext } from "../overlay/overlayContext";
 
 const NavBar = () => {
+  const context = useContext(OverlayContext);
+  const { overlayState, setOverlay } = context;
+
   return (
     <>
       <div className="navigation">
@@ -14,7 +19,7 @@ const NavBar = () => {
           <FaBars
             className="navigation__btn"
             onClick={() => {
-              console.log("clicked");
+              setOverlay(!overlayState);
             }}
           />
         </nav>
