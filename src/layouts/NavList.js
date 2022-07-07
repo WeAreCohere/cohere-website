@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavList = () => {
   return (
     <>
       <li className="navigation__item">
-        <a href="/" className="navigation__link">
+        <Link to="/" className="navigation__link">
           Home
-        </a>
+        </Link>
       </li>
       <li className="navigation__item">
-        <a href="/" className="navigation__link">
+        <Link to="/aboutus" className="navigation__link">
           About us
-        </a>
+        </Link>
       </li>
       <li className="navigation__item">
         <a href="/" className="navigation__link">
@@ -19,9 +20,9 @@ const NavList = () => {
         </a>
       </li>
       <li className="navigation__item">
-        <a href="/" className="navigation__link">
+        <Link to="/getinvolved" className="navigation__link">
           Get Involved
-        </a>
+        </Link>
       </li>
       <li className="navigation__item">
         <a href="/" className="navigation__link">
