@@ -59,4 +59,16 @@ body {
       line-height: 6rem;
     }
   }
+
+  &--sub {
+  }
+}
+
+.paragraph {
+  color: $color-white;
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }

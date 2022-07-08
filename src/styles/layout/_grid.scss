@@ -1,0 +1,45 @@
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    max-width: 50rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+}
+
+[class^="col-"] {
+  flex: 1;
+  //   background: orangered;
+
+  &:not(:last-child) {
+    margin-right: $gutter-horizontal;
+
+    @include respond(tab-port) {
+      margin-right: 0;
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include respond(tab-port) {
+    width: 100% !important;
+  }
+}
+
+[class^="col-2-"] {
+  flex: 2 0 var(--gutter-horizontal);
+}
+
+[class^="col-3-"] {
+  flex: 3 0 var(--gutter-horizontal-double);
+}

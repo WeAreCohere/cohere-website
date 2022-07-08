@@ -1,0 +1,8 @@
+.chevron {
+  width: 10%;
+  animation: updown 1s linear infinite;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
