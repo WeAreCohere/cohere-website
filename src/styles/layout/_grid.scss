@@ -6,7 +6,8 @@
 
   @include respond(tab-port) {
     flex-direction: column;
-    max-width: 50rem;
+    // max-width: 50rem;
+    max-width: 40rem;
   }
 
   &:not(:last-child) {

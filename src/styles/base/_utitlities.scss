@@ -1,5 +1,6 @@
 .u-full-width-img {
   width: 100%;
+  object-fit: cover;
 }
 
 .u-text-center {
@@ -8,4 +9,14 @@
 
 .u-margin-center {
   margin: 0 auto;
+}
+
+.u-default-text {
+  color: $color-white;
+  font-size: 1.7rem;
+  font-family: $font-spacegrotesk;
+  text-align: center;
+  line-height: 1.7rem;
+  font-weight: bold;
+  backface-visibility: hidden;
 }

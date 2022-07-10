@@ -44,43 +44,76 @@ const Home = () => {
             their communities by offering critical services, skills training and
             opportunities. We do this through;
           </p>
-          <div class="row">
-            <div class="col-1-of-4">
+          <div className="row">
+            <div className="col-1-of-4">
               <h2 className="heading-primary u-text-center">Funding</h2>
-              <img
-                className="u-full-width-img"
-                src={advocacy}
-                alt="Refugees community direct funding"
-              />
+              <Link to="/funding">
+                <figure className="story">
+                  <img
+                    className="story__img"
+                    src={advocacy}
+                    alt="Refugees community direct funding"
+                  />
+                  <figcaption className="story__caption">
+                    Create funding opportunities for RLOs and encourage donors
+                    to fund directly
+                  </figcaption>
+                </figure>
+              </Link>
             </div>
-            <div class="col-1-of-4">
+
+            <div className="col-1-of-4">
               <h2 className="heading-primary u-text-center">Capacity</h2>
-              <img
-                className="u-full-width-img"
-                src={capacity}
-                alt="Localisation training for refugees"
-              />
+              <Link to="/capacity">
+                <figure className="story">
+                  <img
+                    className="story__img"
+                    src={capacity}
+                    alt="Localisation training for refugees"
+                  />
+                  <figcaption className="story__caption">
+                    Training to ensure that RLOs can effectively respond to the
+                    needs of their communities
+                  </figcaption>
+                </figure>
+              </Link>
             </div>
-            <div class="col-1-of-4">
+            <div className="col-1-of-4">
               <h2 className="heading-primary u-text-center">Coordination</h2>
-              <img
-                className="u-full-width-img"
-                src={coordination}
-                alt="Refugee leaders meeting"
-              />
+              <Link to="/coordination">
+                <figure className="story">
+                  <img
+                    className="story__img"
+                    src={coordination}
+                    alt="Refugee leaders meeting"
+                  />
+                  <figcaption className="story__caption">
+                    Showcase the work of RLOs and connect them with other
+                    organisations
+                  </figcaption>
+                </figure>
+              </Link>
             </div>
-            <div class="col-1-of-4">
+            <div className="col-1-of-4">
               <h2 className="heading-primary u-text-center">Advocacy</h2>
-              <img
-                className="u-full-width-img"
-                src={funding}
-                alt="Refugee voices"
-              />
+              <Link to="/advocacy">
+                <figure className="story">
+                  <img
+                    className="story__img"
+                    src={funding}
+                    alt="Refugee voices"
+                  />
+                  <figcaption className="story__caption">
+                    Influence donor practices, and support RLOs to tell their
+                    stories
+                  </figcaption>
+                </figure>
+              </Link>
             </div>
           </div>
           <div className="u-text-center">
             <a href="#impact">
-              <img class="chevron" src={chevron} alt="White chevron" />
+              <img className="chevron" src={chevron} alt="White chevron" />
             </a>
           </div>
         </section>

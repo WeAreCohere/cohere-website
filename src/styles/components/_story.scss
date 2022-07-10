@@ -1,0 +1,39 @@
+.story {
+  position: relative;
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+    transform: scale(1.15);
+    backface-visibility: hidden;
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translate(-50%, 50%);
+    color: $color-white;
+    font-size: 1.7rem;
+    font-family: $font-spacegrotesk;
+    text-align: center;
+    line-height: 1.7rem;
+    // font-weight: bold;
+    backface-visibility: hidden;
+  }
+
+  &:hover &__img {
+    cursor: pointer;
+    transform: scale(1);
+    filter: blur(3px) brightness(80%);
+  }
+
+  &:hover &__caption {
+    cursor: pointer;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
