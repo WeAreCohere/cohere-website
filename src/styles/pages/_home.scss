@@ -11,6 +11,17 @@
 .section-we-are-cohere {
   background-color: $cohere_orange;
   min-height: 75vh;
+
+  &--image {
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    & img {
+      height: 10%;
+      width: 10%;
+    }
+  }
 }
 
 .section-smashing-cycle {

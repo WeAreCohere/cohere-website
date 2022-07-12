@@ -1,13 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {
+  BsPeopleFill,
+  BsCashStack,
+  BsGlobe,
+  BsBank2,
+  BsLaptop,
+} from "react-icons/bs";
 
 // IMAGES
 import advocacy from "../images/home/wwd_advocacy.png";
-import background from "../images/home-header.jpg";
+import background from "../images/home/home-header.jpg";
 import capacity from "../images/home/wwd_capacity.png";
-import chevron from "../images/chevron.png";
 import coordination from "../images/home/wwd_coordination.png";
 import funding from "../images/home/wwd_funding.png";
+
+import chevron from "../images/chevron.png";
+import orangeChevron from "../images/chevronorange.png";
+import PersonHeart from "./PersonHeart";
 
 const Home = () => {
   return (
@@ -118,11 +128,92 @@ const Home = () => {
           </div>
         </section>
 
-        <section id="impact" className="section-impact"></section>
+        <section id="impact" className="section-impact">
+          <h1 className="heading-primary u-text-center u-cohere-orange">
+            Impact
+          </h1>
 
-        <section className="section-we-are-cohere"></section>
+          <div className="impact__grid">
+            <div className="impact__grid--item">
+              <BsPeopleFill className="impact__grid--icon" />
+              <h4 className="u-cohere-orange">33</h4>
+              <p>Partner refugee-led organisations</p>
+            </div>
+            <div className="impact__grid--item">
+              <BsCashStack className="impact__grid--icon" />
+              <h4 className="u-cohere-orange">$500,000</h4>
+              <p>
+                In direct funding to refugee-led <br />
+                organisations in 2022
+              </p>
+            </div>
+            <div className="impact__grid--item">
+              <BsGlobe className="impact__grid--icon" />
+              <h4 className="u-cohere-orange">4</h4>
+              <p>Countries: Kenya, Uganda, Malawi, South Africa</p>
+            </div>
+            <div className="impact__grid--item">
+              <BsBank2 className="impact__grid--icon" />
+              <h4 className="u-cohere-orange">8</h4>
+              <p>
+                Institutional donors committed to directly fund refugee-led
+                organisations
+              </p>
+            </div>
+            <div className="impact__grid--item">
+              <PersonHeart />
+              <h4 className="u-cohere-orange">24,479</h4>
+              <p>People reached in 2021</p>
+            </div>
+            <div className="impact__grid--item">
+              <BsLaptop className="impact__grid--icon" />
+              <h4 className="u-cohere-orange">5</h4>
+              <p>
+                Open-source training courses created to strengthen refugee
+                organisations
+              </p>
+            </div>
+          </div>
 
-        <section className="section-smashing-cycle"></section>
+          <div className="u-text-center">
+            <a href="#we-are-cohere">
+              <img
+                className="chevron"
+                src={orangeChevron}
+                alt="Orange chevron"
+              />
+            </a>
+          </div>
+        </section>
+
+        <section id="we-are-cohere" className="section-we-are-cohere">
+          <h1 className="heading-primary u-text-center ">we are cohere</h1>
+          <div className="row">
+            <div className="col-2-of-4 section-we-are-cohere--image">XP</div>
+            <div className="col-1-of-4">
+              <p className="paragraph u-text-center" style={{ width: "100%" }}>
+                At the beginning of 2022 Xavier Project joined forces with Urban
+                Refugees to become COHERE. We realised that by sharing resources
+                and expertise we could do more to support the growth of
+                refugee-led organisations, all whilst reducing costs. This way
+                more money can go directly to our refugee-led partners. We want
+                them to be in the driving seat. Together we want to smash the
+                cycle of dependency. We hope you’ll join us.
+              </p>
+            </div>
+            <div className="col-2-of-4 section-we-are-cohere--image">UR</div>
+          </div>
+          <div className="u-text-center">
+            <a href="#smashing-cycle">
+              <img className="chevron" src={chevron} alt="White chevron" />
+            </a>
+          </div>
+        </section>
+
+        <section
+          id="smashing-cycle"
+          className="section-smashing-cycle"
+        ></section>
 
         <section className="section-reframe"></section>
 

@@ -1,0 +1,29 @@
+.impact {
+  &__grid {
+    display: grid;
+    padding: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    align-items: start;
+
+    &--item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+
+      & p {
+        font-size: 1.3rem !important;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+
+    &--icon {
+      font-size: 6rem !important;
+      text-align: center;
+      height: 8rem;
+      width: 8rem;
+    }
+  }
+}
