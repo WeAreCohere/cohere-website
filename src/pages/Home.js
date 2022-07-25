@@ -14,6 +14,8 @@ import background from "../images/home/home-header.jpg";
 import capacity from "../images/home/wwd_capacity.png";
 import coordination from "../images/home/wwd_coordination.png";
 import funding from "../images/home/wwd_funding.png";
+import ur from "../images/home/UR-Logo.webp";
+import xp from "../images/home/XP-Logo.webp";
 
 import chevron from "../images/chevron.png";
 import orangeChevron from "../images/chevronorange.png";
@@ -189,9 +191,9 @@ const Home = () => {
         <section id="we-are-cohere" className="section-we-are-cohere">
           <h1 className="heading-primary u-text-center ">we are cohere</h1>
           <div className="row">
-            <div className="col-2-of-4 section-we-are-cohere--image">XP</div>
-            <div className="col-1-of-4">
-              <p className="paragraph u-text-center" style={{ width: "100%" }}>
+            <img className="section-we-are-cohere--image" src={xp} alt="XP" />
+            <div className="">
+              <p className="paragraph u-text-center">
                 At the beginning of 2022 Xavier Project joined forces with Urban
                 Refugees to become COHERE. We realised that by sharing resources
                 and expertise we could do more to support the growth of
@@ -201,14 +203,17 @@ const Home = () => {
                 cycle of dependency. We hope you’ll join us.
               </p>
             </div>
-            <div className="col-2-of-4 section-we-are-cohere--image">UR</div>
+            <img className="section-we-are-cohere--image" src={ur} alt="XP" />
           </div>
+
           <div className="u-text-center">
-            <a href="#smashing-cycle">
+            <a href="#stories">
               <img className="chevron" src={chevron} alt="White chevron" />
             </a>
           </div>
         </section>
+
+        <div id="stories" className="section-stories"></div>
 
         <section
           id="smashing-cycle"

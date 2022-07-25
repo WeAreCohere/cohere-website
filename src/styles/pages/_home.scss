@@ -13,15 +13,18 @@
   min-height: 75vh;
 
   &--image {
+    height: 10%;
+    width: 10%;
+
     @include respond(tab-port) {
       display: none;
     }
-
-    & img {
-      height: 10%;
-      width: 10%;
-    }
   }
+}
+
+.section-stories {
+  background-color: $cohere_red;
+  min-height: 75vh;
 }
 
 .section-smashing-cycle {
