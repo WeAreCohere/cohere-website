@@ -20,6 +20,7 @@ import xp from "../images/home/XP-Logo.webp";
 import chevron from "../images/chevron.png";
 import orangeChevron from "../images/chevronorange.png";
 import PersonHeart from "./PersonHeart";
+import Slider from "../components/Slider";
 
 const Home = () => {
   return (
@@ -213,7 +214,9 @@ const Home = () => {
           </div>
         </section>
 
-        <div id="stories" className="section-stories"></div>
+        <div id="stories" className="section-stories">
+          <Slider></Slider>
+        </div>
 
         <section
           id="smashing-cycle"
