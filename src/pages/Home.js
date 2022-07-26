@@ -21,6 +21,7 @@ import chevron from "../images/chevron.png";
 import orangeChevron from "../images/chevronorange.png";
 import PersonHeart from "./PersonHeart";
 import Slider from "../components/Slider";
+import Stories from "../components/Stories";
 
 const Home = () => {
   return (
@@ -215,7 +216,9 @@ const Home = () => {
         </section>
 
         <div id="stories" className="section-stories">
-          <Slider></Slider>
+          <Slider>
+            <Stories />
+          </Slider>
         </div>
 
         <section
