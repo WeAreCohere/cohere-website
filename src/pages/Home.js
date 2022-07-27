@@ -193,7 +193,13 @@ const Home = () => {
         <section id="we-are-cohere" className="section-we-are-cohere">
           <h1 className="heading-primary u-text-center ">we are cohere</h1>
           <div className="row">
-            <img className="section-we-are-cohere--image" src={xp} alt="XP" />
+            <div
+              className="section-we-are-cohere--image"
+              style={{
+                backgroundImage: `url(${xp})`,
+              }}
+            ></div>
+
             <div className="">
               <p className="paragraph u-text-center">
                 At the beginning of 2022 Xavier Project joined forces with Urban
@@ -205,7 +211,12 @@ const Home = () => {
                 cycle of dependency. We hope you’ll join us.
               </p>
             </div>
-            <img className="section-we-are-cohere--image" src={ur} alt="XP" />
+            <div
+              className="section-we-are-cohere--image"
+              style={{
+                backgroundImage: `url(${ur})`,
+              }}
+            ></div>
           </div>
 
           <div className="u-text-center">

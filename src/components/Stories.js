@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import BtnSlider from "./BtnSlider";
 
-import img from "../images/home/wwd_advocacy.png";
-import "./Stories.css";
 import storySlider from "./storySlider";
 
 const Stories = (props) => {
@@ -34,18 +32,21 @@ const Stories = (props) => {
         return (
           <div
             key={el.id}
-            className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
+            className={
+              slideIndex === index + 1 ? "slide slide__active" : "slide"
+            }
           >
-            <div className="timeline">
-              <div className="timeline__text">
-                <div className="timeline__text--title">{el.title}</div>
-                <div className="timeline__text--subtitle">{el.subTitle}</div>
-                <div className="timeline__text--paragraph">{el.paragraph}</div>
+            <div className="testimonial">
+              <div className="testimonial__text">
+                <h1 className="testimonial__text--title">{el.title}</h1>
+                <h3 className="testimonial__text--subtitle">{el.subTitle}</h3>
+                <p className="testimonial__text--paragraph">{el.paragraph}</p>
               </div>
 
-              <div className="timeline__img">
-                <img src={el.image} alt="" />
-              </div>
+              <div
+                className="testimonial__img"
+                style={{ backgroundImage: `url(${el.image})` }}
+              ></div>
             </div>
           </div>
         );
@@ -57,8 +58,9 @@ const Stories = (props) => {
       <div className="container-dots">
         {Array.from({ length: storySlider.length }).map((item, index) => (
           <div
+            key={index}
             onClick={() => moveDot(index + 1)}
-            className={slideIndex === index + 1 ? "dot active" : "dot"}
+            className={slideIndex === index + 1 ? "dot dot__active" : "dot"}
           ></div>
         ))}
       </div>
