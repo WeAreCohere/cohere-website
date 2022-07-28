@@ -13,7 +13,9 @@ import advocacy from "../images/home/wwd_advocacy.png";
 import background from "../images/home/home-header.jpg";
 import capacity from "../images/home/wwd_capacity.png";
 import coordination from "../images/home/wwd_coordination.png";
+import cycle from "../images/home/cycle.jpg";
 import funding from "../images/home/wwd_funding.png";
+import reframe from "../images/home/reframe.jpg";
 import ur from "../images/home/UR-Logo.webp";
 import xp from "../images/home/XP-Logo.webp";
 
@@ -232,14 +234,99 @@ const Home = () => {
           </Slider>
         </div>
 
-        <section
-          id="smashing-cycle"
-          className="section-smashing-cycle"
-        ></section>
+        <section id="smashing-cycle" className="section-smashing-cycle">
+          <div className="halfsection">
+            <div
+              className="halfsection__img"
+              style={{ backgroundImage: `url(${cycle})` }}
+            ></div>
+            <div className="halfsection__text">
+              <h2>HELP US SMASH THE CYCLE OF DEPENDENCY</h2>
+              <p>
+                Your contribution enables refugees to help themselves to a
+                better future on their own terms. So whether it’s going to
+                school, learning a new skill or creating a difference for the
+                local community, it’s about being able to make their own choices
+                towards a better future. And we hope you choose to help.
+              </p>
+              <a
+                href="https://cohere.enthuse.com/donate#!/"
+                className="btn btn--white"
+              >
+                Donate
+              </a>
+              <a href="#reframe">
+                <img className="chevron" src={chevron} alt="White chevron" />
+              </a>
+            </div>
+          </div>
+        </section>
 
-        <section className="section-reframe"></section>
+        <section id="reframe" className="section-reframe">
+          <div className="halfsection">
+            <div className="halfsection__text">
+              <h2>REFRAME</h2>
+              <p>
+                Reframe was launched in 2021, and is powered by Cohere and its
+                partners Solidarity Initiative for Refugees and Youth Voices
+                Community. The platform aims to be a solution to multiple
+                challenges refugee-led organisations worldwide are facing.
+              </p>
+              <p>
+                Through connection, collaboration and communication we hope
+                Reframe overcomes some of these challenges, and enables
+                refugee-led organisations to access the tools they need to
+                transform their communities.
+              </p>
+              <a href="https://reframe.network/" className="btn btn--white">
+                Visit
+              </a>
+            </div>
+            <div
+              className="halfsection__img"
+              style={{ backgroundImage: `url(${reframe})` }}
+            ></div>
+          </div>
+        </section>
 
-        <section className="section-news"></section>
+        <section className="section-news">
+          <h1 className="heading-primary u-text-center">NEWS</h1>
+          <a
+            className="heading-primary--sub u-text-center"
+            href="https://news.wearecohere.org/categories/news/"
+          >
+            <h3>
+              View all <span>&rarr;</span>
+            </h3>
+          </a>
+
+          <div className="row">
+            <div className="col-1-of-3">
+              <div className="">
+                <div>Blog Title 1</div>
+                <a href="#kwech">
+                  <img src="" referrerpolicy="no-referrer" alt="" />
+                </a>
+              </div>
+            </div>
+            <div className="col-1-of-3">
+              <div className="">
+                <div>Blog Title 2</div>
+                <a href="#kwech">
+                  <img src="" referrerpolicy="no-referrer" alt="" />
+                </a>
+              </div>
+            </div>
+            <div className="col-1-of-3">
+              <div className="">
+                <div>Blog Title 3</div>
+                <a href="#kwech">
+                  <img src="" referrerpolicy="no-referrer" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
