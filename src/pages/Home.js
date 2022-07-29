@@ -302,26 +302,44 @@ const Home = () => {
 
           <div className="row">
             <div className="col-1-of-3">
-              <div className="">
-                <div>Blog Title 1</div>
+              <div className="blog">
+                <div className="blog__title">Blog Title 1</div>
                 <a href="#kwech">
-                  <img src="" referrerpolicy="no-referrer" alt="" />
+                  <img
+                    src={background}
+                    className="blog__img"
+                    referrerpolicy="no-referrer"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
             <div className="col-1-of-3">
-              <div className="">
-                <div>Blog Title 2</div>
+              <div className="blog">
+                <div className="blog__title">
+                  Blog Title 2 sjskaallsjska measuring is a skill learnt in
+                  mathematics
+                </div>
                 <a href="#kwech">
-                  <img src="" referrerpolicy="no-referrer" alt="" />
+                  <img
+                    src={background}
+                    className="blog__img"
+                    referrerpolicy="no-referrer"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
             <div className="col-1-of-3">
-              <div className="">
-                <div>Blog Title 3</div>
+              <div className="blog">
+                <div className="blog__title">Blog Title 3</div>
                 <a href="#kwech">
-                  <img src="" referrerpolicy="no-referrer" alt="" />
+                  <img
+                    src={background}
+                    className="blog__img"
+                    referrerpolicy="no-referrer"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
