@@ -344,6 +344,15 @@ const Home = () => {
               </div>
             </div>
           </div>
+
+          <div className="u-text-center" style={{ paddingBottom: "2rem" }}>
+            <a
+              href="https://cohere.enthuse.com/donate#!/"
+              className="btn btn--white"
+            >
+              Help us smash the cycle of dependency
+            </a>
+          </div>
         </section>
       </main>
     </>

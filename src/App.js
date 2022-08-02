@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Reports from "./pages/Reports";
 import GetInvolved from "./pages/GetInvolved";
+import Footer from "./layouts/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="reports" element={<Reports />} />
           <Route path="getinvolved" element={<GetInvolved />} />
         </Routes>
+        <Footer />
       </OverlayProvider>
     </>
   );
