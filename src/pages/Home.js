@@ -16,8 +16,8 @@ import coordination from "../images/home/wwd_coordination.png";
 import cycle from "../images/home/cycle.jpg";
 import funding from "../images/home/wwd_funding.png";
 import reframe from "../images/home/reframe.jpg";
-import ur from "../images/home/UR-Logo.webp";
-import xp from "../images/home/XP-Logo.webp";
+// import ur from "../images/home/UR-Logo.webp";
+// import xp from "../images/home/XP-Logo.webp";
 
 import chevron from "../images/chevron.png";
 import orangeChevron from "../images/chevronorange.png";
@@ -195,12 +195,12 @@ const Home = () => {
         <section id="we-are-cohere" className="section-we-are-cohere">
           <h1 className="heading-primary u-text-center ">we are cohere</h1>
           <div className="row">
-            <div
+            {/* <div
               className="section-we-are-cohere--image"
               style={{
                 backgroundImage: `url(${xp})`,
               }}
-            ></div>
+            ></div> */}
 
             <div className="">
               <p className="paragraph u-text-center">
@@ -213,12 +213,12 @@ const Home = () => {
                 cycle of dependency. We hope you’ll join us.
               </p>
             </div>
-            <div
+            {/* <div
               className="section-we-are-cohere--image"
               style={{
                 backgroundImage: `url(${ur})`,
               }}
-            ></div>
+            ></div> */}
           </div>
 
           <div className="u-text-center">

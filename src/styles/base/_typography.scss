@@ -74,4 +74,17 @@ body {
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
+
+  &--black {
+    color: inherit;
+  }
+
+  &--small {
+    color: inherit;
+    font-size: 1.4rem !important;
+  }
+
+  &--capital {
+    text-transform: uppercase;
+  }
 }

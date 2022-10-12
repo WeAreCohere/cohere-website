@@ -1,4 +1,65 @@
 .footer {
   background-color: $cohere_blue;
-  padding: 10rem;
+  padding: 3rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  @include respond(tab-port) {
+    align-items: center;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    &--items {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      @include respond(tab-port) {
+        align-items: center;
+      }
+    }
+
+    &--socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 1rem;
+    font-size: 4rem;
+    transition: all 0.3s;
+
+    &--item {
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &__registry {
+    border-top: 1px solid rgba(0, 0, 0, 0.295);
+    padding: 2rem;
+    width: 80%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
