@@ -22,8 +22,8 @@ import reframe from "../images/home/reframe.jpg";
 import chevron from "../images/chevron.png";
 import orangeChevron from "../images/chevronorange.png";
 import PersonHeart from "./PersonHeart";
-import Slider from "../components/Slider";
-import Stories from "../components/Stories";
+// import Slider from "../components/Slider";
+// import Stories from "../components/Stories";
 
 const Home = () => {
   return (
@@ -222,17 +222,17 @@ const Home = () => {
           </div>
 
           <div className="u-text-center">
-            <a href="#stories">
+            <a href="#smashing-cycle">
               <img className="chevron" src={chevron} alt="White chevron" />
             </a>
           </div>
         </section>
 
-        <div id="stories" className="section-stories">
+        {/* <div id="stories" className="section-stories">
           <Slider>
             <Stories />
           </Slider>
-        </div>
+        </div> */}
 
         <section id="smashing-cycle" className="section-smashing-cycle">
           <div className="halfsection">

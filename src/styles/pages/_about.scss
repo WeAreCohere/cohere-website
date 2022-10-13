@@ -1,0 +1,24 @@
+.section-vision {
+  background-color: $cohere_red;
+  min-height: 75vh;
+}
+
+.section-collaboration {
+  background-color: $cohere_blue;
+  min-height: 75vh;
+}
+
+.section-timeline {
+  background-color: $cohere_orange;
+  min-height: 100vh;
+
+  &--container {
+    max-width: 70vw;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+
+    @include respond(tab-port) {
+      max-width: 80vw;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.timeline {
+  position: relative;
+  padding-left: 4rem;
+  // margin: 0 0 0 30px;
+  margin: 0 3rem;
+  color: $cohere_black;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: white;
+  }
+
+  .timeline-container {
+    position: relative;
+    // margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    .timeline-icon {
+      position: absolute;
+      left: -10rem;
+      // left: -11%;
+      top: 4px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 2rem;
+      background: white;
+
+      p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .timeline-body {
+      background: white;
+      border-radius: $timeline-body-round;
+      padding: 20px 20px 15px;
+      box-shadow: $timeline-body-shadow;
+
+      &:before {
+        content: "";
+        background: inherit;
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        left: -10px;
+        transform: rotate(45deg);
+        border-radius: 0 0 0 2px;
+      }
+    }
+  }
+}

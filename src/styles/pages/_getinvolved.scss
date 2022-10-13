@@ -1,0 +1,30 @@
+.section-help-out {
+  background-color: $cohere_black;
+  min-height: 85vh;
+
+  &--grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1rem;
+    margin: 1rem auto;
+
+    img {
+      height: 32rem;
+      width: 30rem;
+      transition: all 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.09);
+      }
+    }
+  }
+}
+
+.section-events {
+  background-color: $cohere_red;
+  min-height: 85vh;
+}

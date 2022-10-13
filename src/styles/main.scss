@@ -13,8 +13,9 @@
 @import "components/impact";
 @import "components/slider";
 @import "components/story";
-@import "components/halfsection";
 @import "components/testimonial";
+@import "components/timeline";
+@import "components/halfsection";
 
 @import "layout/footer";
 @import "layout/grid";
@@ -22,4 +23,6 @@
 @import "layout/navigation";
 @import "layout/overlay";
 
+@import "pages/about";
 @import "pages/home";
+@import "pages/getinvolved";
