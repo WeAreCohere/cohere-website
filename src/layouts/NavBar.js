@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import logo from "../images/clwhite.webp";
 import NavList from "./NavList";
@@ -6,7 +6,6 @@ import { FaBars } from "react-icons/fa";
 import { OverlayContext } from "../overlay/overlayContext";
 
 const NavBar = () => {
-  const {} = useState();
   const context = useContext(OverlayContext);
   const { overlayState, setOverlay } = context;
 

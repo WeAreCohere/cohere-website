@@ -33,7 +33,12 @@ const Reports = () => {
             />
 
             <div className="matrix__description">
-              <a className="btn btn--red" href="#" target="_blank">
+              <a
+                className="btn btn--red"
+                href="https://www.wearecohere.org/docs/CohereStrategicPlan22-26.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Download
               </a>
               <h3>Cohere Strategic Plan 2022-2026</h3>
@@ -50,7 +55,12 @@ const Reports = () => {
             />
 
             <div className="matrix__description">
-              <a className="btn btn--red" href="#" target="_blank">
+              <a
+                className="btn btn--red"
+                href="https://drive.google.com/file/d/1uJPxLdR1yEKDGS1rxRHgwjrvn7ppk2LH/view"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Download
               </a>
               <h3>Capacity Strengthening and Sharing Course 20216</h3>
@@ -67,7 +77,12 @@ const Reports = () => {
             />
 
             <div className="matrix__description">
-              <a className="btn btn--red" href="#" target="_blank">
+              <a
+                className="btn btn--red"
+                href="https://xavierproject.org/wp-content/uploads/2021/07/XavierProjectAnnualReport2020-2.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Download
               </a>
               <h3>Annual Report 2020</h3>
@@ -84,7 +99,12 @@ const Reports = () => {
             />
 
             <div className="matrix__description">
-              <a className="btn btn--red" href="#" target="_blank">
+              <a
+                className="btn btn--red"
+                href="https://xavierproject.org/wp-content/uploads/2020/10/XavierProjectAnnualReport2019.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Download
               </a>
               <h3>Xavier Project Annual Report 2019</h3>
@@ -101,7 +121,12 @@ const Reports = () => {
             />
 
             <div className="matrix__description">
-              <a className="btn btn--red" href="#" target="_blank">
+              <a
+                className="btn btn--red"
+                href="https://xavierproject.org/wp-content/uploads/2020/01/AnnualReport2018_Final.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Download
               </a>
               <h3>Xavier Project Annual Report 2018</h3>
@@ -118,7 +143,12 @@ const Reports = () => {
             />
 
             <div className="matrix__description">
-              <a className="btn btn--red" href="#" target="_blank">
+              <a
+                className="btn btn--red"
+                href="https://xavierproject.org/wp-content/uploads/2020/01/XPAnnualReport2017.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Download
               </a>
               <h3>Xavier Project Annual Report 2017</h3>
@@ -135,7 +165,12 @@ const Reports = () => {
             />
 
             <div className="matrix__description">
-              <a className="btn btn--red" href="#" target="_blank">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Download
               </a>
               <h3>Xavier Project Annual Report 2016</h3>
