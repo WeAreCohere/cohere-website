@@ -37,6 +37,8 @@
   &__item {
     margin: 2.5rem;
     transition: all 0.2s;
+    z-index: 11;
+    position: relative;
 
     &:hover {
       cursor: pointer;
@@ -46,6 +48,49 @@
     &:active,
     &:focus {
       transform: scale(1) translateY(0.3rem);
+    }
+
+    &:hover ul,
+    &:focus ul {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &drop {
+      position: absolute;
+      font-size: $default-font-size;
+      font-family: $font-spacegrotesk;
+      font-weight: bold;
+      top: 4rem;
+      left: -1rem;
+      box-shadow: 0 0 10px $color-grey-dark-3;
+      background-color: white;
+      border-radius: 0.2rem;
+      width: 12rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 200ms ease-in-out;
+
+      &--link {
+        padding: 0.5rem 1rem;
+        border-radius: 0.2rem;
+        text-decoration: none;
+        color: $color-black;
+        transition: background-color 200ms ease-in-out;
+      }
+
+      li {
+        list-style: none;
+
+        &:hover,
+        &:focus {
+          background-color: $cohere-blue;
+        }
+      }
     }
   }
 

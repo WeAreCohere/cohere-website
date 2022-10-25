@@ -1,0 +1,40 @@
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-auto-rows: 40rem;
+  gap: 15px;
+
+  &__img {
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
+    border-radius: 12px;
+    transition: ease-in-out 0.5s;
+  }
+
+  &__item {
+    position: relative;
+    transition: ease-in-out 0.2s;
+  }
+
+  &__description {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    color: $color-white;
+    height: 100%;
+    width: 100%;
+    letter-spacing: 2px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    text-overflow: ellipsis;
+  }
+}
+
+.matrix__item:hover .matrix__img {
+  filter: brightness(0.5);
+  transform: scale(1.01);
+}

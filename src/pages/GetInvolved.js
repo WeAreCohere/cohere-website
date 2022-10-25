@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import background from "../images/involved/involved.jpg";
-import donate from "../images/involved/gi_donate.png";
-import fund from "../images/involved/gi_fund.png";
-import volunteer from "../images/involved/gi_vol.png";
-import events from "../images/involved/events.jpg";
+import {
+  background,
+  donate,
+  events,
+  fund,
+  volunteer,
+} from "../images/involved";
 
 const GetInvolved = () => {
   return (
@@ -36,9 +38,12 @@ const GetInvolved = () => {
           <div className="row">
             <div className="col-1-of-3">
               <div className="section-help-out--grid">
-                <Link to="#" className="btn btn--white">
+                <a
+                  href="https://cohere.enthuse.com/donate#!/"
+                  className="btn btn--white"
+                >
                   Donate
-                </Link>
+                </a>
                 <p className="paragraph u-text-center">
                   Give the gift of independence today with a small monthly
                   donation.
@@ -48,9 +53,12 @@ const GetInvolved = () => {
             </div>
             <div className="col-1-of-3">
               <div className="section-help-out--grid">
-                <Link to="#" className="btn btn--white">
+                <a
+                  href="https://cohere.enthuse.com/fundraising/start#!/"
+                  className="btn btn--white"
+                >
                   Fundraise
-                </Link>
+                </a>
                 <p className="paragraph u-text-center">
                   Looking for change? You can help us change futures.
                 </p>
@@ -59,9 +67,12 @@ const GetInvolved = () => {
             </div>
             <div className="col-1-of-3">
               <div className="section-help-out--grid">
-                <Link to="#" className="btn btn--white">
+                <a
+                  href="mailto:volunteer@wearecohere.org"
+                  className="btn btn--white"
+                >
                   Volunteer
-                </Link>
+                </a>
                 <p className="paragraph u-text-center">
                   Share you time and skills. Our future looks better with you in
                   it.

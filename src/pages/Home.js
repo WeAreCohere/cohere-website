@@ -9,21 +9,19 @@ import {
 } from "react-icons/bs";
 
 // IMAGES
-import advocacy from "../images/home/wwd_advocacy.png";
-import background from "../images/home/home-header.jpg";
-import capacity from "../images/home/wwd_capacity.png";
-import coordination from "../images/home/wwd_coordination.png";
-import cycle from "../images/home/cycle.jpg";
-import funding from "../images/home/wwd_funding.png";
-import reframe from "../images/home/reframe.jpg";
-// import ur from "../images/home/UR-Logo.webp";
-// import xp from "../images/home/XP-Logo.webp";
+import {
+  advocacy,
+  background,
+  capacity,
+  coordination,
+  cycle,
+  funding,
+  reframe,
+} from "../images/home";
 
-import chevron from "../images/chevron.png";
-import orangeChevron from "../images/chevronorange.png";
+import { chevron, orangeChevron } from "../images";
+
 import PersonHeart from "./PersonHeart";
-// import Slider from "../components/Slider";
-// import Stories from "../components/Stories";
 
 const Home = () => {
   return (
@@ -228,11 +226,11 @@ const Home = () => {
           </div>
         </section>
 
-        {/* <div id="stories" className="section-stories">
+        {/* <section id="stories" className="section-stories">
           <Slider>
             <Stories />
           </Slider>
-        </div> */}
+        </section> */}
 
         <section id="smashing-cycle" className="section-smashing-cycle">
           <div className="halfsection">
@@ -308,7 +306,7 @@ const Home = () => {
                   <img
                     src={background}
                     className="blog__img"
-                    referrerpolicy="no-referrer"
+                    referrerPolicy="no-referrer"
                     alt=""
                   />
                 </a>
@@ -324,7 +322,7 @@ const Home = () => {
                   <img
                     src={background}
                     className="blog__img"
-                    referrerpolicy="no-referrer"
+                    referrerPolicy="no-referrer"
                     alt=""
                   />
                 </a>
@@ -337,7 +335,7 @@ const Home = () => {
                   <img
                     src={background}
                     className="blog__img"
-                    referrerpolicy="no-referrer"
+                    referrerPolicy="no-referrer"
                     alt=""
                   />
                 </a>

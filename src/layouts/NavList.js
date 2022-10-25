@@ -13,9 +13,21 @@ const NavList = () => {
         <Link to="/aboutus" className="navigation__link">
           About us
         </Link>
+        <ul className="navigation__itemdrop">
+          <li>
+            <Link className="navigation__itemdrop--link" to="/team">
+              Team
+            </Link>
+          </li>
+          <li>
+            <Link className="navigation__itemdrop--link" to="/reports">
+              Reports
+            </Link>
+          </li>
+        </ul>
       </li>
       <li className="navigation__item">
-        <a href="/" className="navigation__link">
+        <a href="https://news.wearecohere.org/" className="navigation__link">
           Blogs & News
         </a>
       </li>
@@ -25,7 +37,10 @@ const NavList = () => {
         </Link>
       </li>
       <li className="navigation__item">
-        <a href="/" className="navigation__link">
+        <a
+          href="https://cohere.enthuse.com/donate#!/"
+          className="navigation__link"
+        >
           Donate
         </a>
       </li>

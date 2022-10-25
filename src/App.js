@@ -10,6 +10,7 @@ import AboutUs from "./pages/AboutUs";
 import Reports from "./pages/Reports";
 import GetInvolved from "./pages/GetInvolved";
 import Footer from "./layouts/Footer";
+import Team from "./pages/Team";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="reports" element={<Reports />} />
+          <Route path="team" element={<Team />} />
           <Route path="getinvolved" element={<GetInvolved />} />
         </Routes>
         <Footer />

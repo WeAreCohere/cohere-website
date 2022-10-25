@@ -1,9 +1,9 @@
 import React from "react";
 
 // Images
-import background from "../images/about/aboutus.jpg";
-import whiteChevron from "../images/chevron.png";
-import collab from "../images/about/collab.jpg";
+import { background, collab } from "../images/about";
+import { chevron } from "../images";
+
 import Timeline from "../components/Timeline";
 
 const AboutUs = () => {
@@ -23,7 +23,7 @@ const AboutUs = () => {
           </p>
           <div className="u-text-center">
             <a href="#vision">
-              <img className="chevron" src={whiteChevron} alt="White chevron" />
+              <img className="chevron" src={chevron} alt="White chevron" />
             </a>
           </div>
         </div>
@@ -52,7 +52,7 @@ const AboutUs = () => {
           </p>
           <div className="u-text-center">
             <a href="#collaboration">
-              <img className="chevron" src={whiteChevron} alt="White chevron" />
+              <img className="chevron" src={chevron} alt="White chevron" />
             </a>
           </div>
         </section>

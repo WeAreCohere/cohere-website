@@ -34,4 +34,10 @@
     border-color: $color-white;
     color: $color-white;
   }
+
+  &--red {
+    border-color: transparent !important;
+    background-color: $cohere_red;
+    color: $color-black;
+  }
 }
