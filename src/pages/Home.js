@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 import {
   BsPeopleFill,
   BsCashStack,
@@ -19,11 +22,79 @@ import {
   reframe,
 } from "../images/home";
 
-import { chevron, orangeChevron } from "../images";
+import { chevron, orangeChevron, placeHolder } from "../images";
 
 import PersonHeart from "./PersonHeart";
 
 const Home = () => {
+  const [blogs, setBlogs] = useState(null);
+  const [loaded, setLoaded] = useState(null);
+
+  const fetchBlogs = useCallback(async () => {
+    try {
+      const response = await fetch("https://calm-inlet-18337.herokuapp.com/");
+      if (!response.ok) {
+        throw new Error("Couldn't fetch blogs'");
+      }
+
+      const data = await response.json();
+      setBlogs(data);
+      setLoaded(true);
+    } catch (error) {
+      setBlogs(null);
+      setLoaded(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchBlogs();
+  }, [fetchBlogs]);
+
+  const filterArr = (arr, category) => {
+    const returnedArray = arr
+      .filter((blog) => blog.category.includes(category))
+      .slice(0, 3);
+
+    return returnedArray;
+  };
+
+  let renderedNews = ``;
+  let news = blogs && filterArr(blogs.results.data, "news");
+  let colors = ["#ff9343", "#72ccca", "#ff6865"];
+
+  renderedNews = news ? (
+    news.map((data, i) => (
+      <div className="col-1-of-3" key={i}>
+        <div className="blog" style={{ backgroundColor: `${colors[i]}` }}>
+          <div className="blog__title">{data.name}</div>
+          <a href={`https://news.wearecohere.org${data.permalink}`}>
+            <LazyLoadImage
+              src={data.image}
+              alt={data.name}
+              height="100%"
+              width="100%"
+              effect="blur"
+              placeholderSrc={placeHolder}
+              className="blog__img"
+            />
+          </a>
+        </div>
+      </div>
+    ))
+  ) : (
+    <div style={{ margin: "0 auto" }}>
+      <p className="paragraph">Loading 🚀...</p>
+    </div>
+  );
+
+  if (!loaded) {
+    renderedNews = (
+      <div style={{ margin: "0 auto" }}>
+        <p className="paragraph">Something went wrong 📛</p>
+      </div>
+    );
+  }
+
   return (
     <>
       <header
@@ -298,50 +369,7 @@ const Home = () => {
             </h3>
           </a>
 
-          <div className="row">
-            <div className="col-1-of-3">
-              <div className="blog">
-                <div className="blog__title">Blog Title 1</div>
-                <a href="#kwech">
-                  <img
-                    src={background}
-                    className="blog__img"
-                    referrerPolicy="no-referrer"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="col-1-of-3">
-              <div className="blog">
-                <div className="blog__title">
-                  Blog Title 2 sjskaallsjska measuring is a skill learnt in
-                  mathematics
-                </div>
-                <a href="#kwech">
-                  <img
-                    src={background}
-                    className="blog__img"
-                    referrerPolicy="no-referrer"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="col-1-of-3">
-              <div className="blog">
-                <div className="blog__title">Blog Title 3</div>
-                <a href="#kwech">
-                  <img
-                    src={background}
-                    className="blog__img"
-                    referrerPolicy="no-referrer"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
+          <div className="row">{renderedNews}</div>
 
           <div className="u-text-center" style={{ paddingBottom: "2rem" }}>
             <a

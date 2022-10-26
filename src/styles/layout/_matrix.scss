@@ -32,9 +32,18 @@
     padding: 2rem;
     text-overflow: ellipsis;
   }
+
+  &__hidden {
+    opacity: 0;
+    transition: ease-in-out 0.4s;
+  }
 }
 
 .matrix__item:hover .matrix__img {
   filter: brightness(0.5);
   transform: scale(1.01);
+}
+
+.matrix__item:hover .matrix__hidden {
+  opacity: 1;
 }

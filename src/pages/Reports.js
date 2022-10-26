@@ -13,6 +13,8 @@ import {
   XPAnnualReport2016,
 } from "../images/reports";
 
+import { placeHolder } from "../images";
+
 const Reports = () => {
   return (
     <>
@@ -30,6 +32,7 @@ const Reports = () => {
               height="100%"
               width="100%"
               className="matrix__img"
+              placeholderSrc={placeHolder}
             />
 
             <div className="matrix__description">
@@ -52,6 +55,7 @@ const Reports = () => {
               height="100%"
               width="100%"
               className="matrix__img"
+              placeholderSrc={placeHolder}
             />
 
             <div className="matrix__description">
@@ -74,6 +78,7 @@ const Reports = () => {
               height="100%"
               width="100%"
               className="matrix__img"
+              placeholderSrc={placeHolder}
             />
 
             <div className="matrix__description">
@@ -96,6 +101,7 @@ const Reports = () => {
               height="100%"
               width="100%"
               className="matrix__img"
+              placeholderSrc={placeHolder}
             />
 
             <div className="matrix__description">
@@ -118,6 +124,7 @@ const Reports = () => {
               height="100%"
               width="100%"
               className="matrix__img"
+              placeholderSrc={placeHolder}
             />
 
             <div className="matrix__description">
@@ -140,6 +147,7 @@ const Reports = () => {
               height="100%"
               width="100%"
               className="matrix__img"
+              placeholderSrc={placeHolder}
             />
 
             <div className="matrix__description">
@@ -162,6 +170,7 @@ const Reports = () => {
               height="100%"
               width="100%"
               className="matrix__img"
+              placeholderSrc={placeHolder}
             />
 
             <div className="matrix__description">

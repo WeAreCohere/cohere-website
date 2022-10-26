@@ -27,9 +27,12 @@ const Footer = () => {
         </div>
         <div className="footer__row--socials">
           <h3 className="paragraph--capital">Stay in touch</h3>
-          <Link to="#" className="btn btn--white">
+          <a
+            href="https://wearecohere.us6.list-manage.com/subscribe?u=3e8c7c706f&id=5e20537c9d"
+            className="btn btn--white"
+          >
             mailing list
-          </Link>
+          </a>
         </div>
         <div className="footer__row--socials">
           <h3 className="paragraph--capital">Follow Us</h3>

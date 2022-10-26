@@ -91,6 +91,11 @@
           background-color: $cohere-blue;
         }
       }
+
+      @include respond(tab-port) {
+        top: 0;
+        left: 50%;
+      }
     }
   }
 

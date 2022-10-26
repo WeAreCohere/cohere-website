@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../images/clwhite.webp";
 import NavList from "./NavList";
 import { FaBars } from "react-icons/fa";
@@ -31,7 +31,9 @@ const NavBar = () => {
           className="navigation__nav"
           style={{ backgroundColor: navigationColor }}
         >
-          <img className="navigation__logo" src={logo} alt="Cohere Logo" />
+          <Link to="/">
+            <img className="navigation__logo" src={logo} alt="Cohere Logo" />
+          </Link>
           <ul className="navigation__list">
             <NavList />
           </ul>

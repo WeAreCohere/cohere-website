@@ -11,6 +11,10 @@ import Reports from "./pages/Reports";
 import GetInvolved from "./pages/GetInvolved";
 import Footer from "./layouts/Footer";
 import Team from "./pages/Team";
+import Funding from "./pages/Funding";
+import Advocacy from "./pages/Advocacy";
+import Capacity from "./pages/Capacity";
+import Coordination from "./pages/Coordination";
 
 function App() {
   return (
@@ -21,6 +25,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="aboutus" element={<AboutUs />} />
+          <Route path="advocacy" element={<Advocacy />} />
+          <Route path="capacity" element={<Capacity />} />
+          <Route path="coordination" element={<Coordination />} />
+          <Route path="funding" element={<Funding />} />
           <Route path="reports" element={<Reports />} />
           <Route path="team" element={<Team />} />
           <Route path="getinvolved" element={<GetInvolved />} />
