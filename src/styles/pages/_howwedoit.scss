@@ -2,3 +2,22 @@
   min-height: 85vh;
   padding: 3rem;
 }
+
+.capacity {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--img {
+      height: 15rem;
+      width: 15rem;
+    }
+  }
+}

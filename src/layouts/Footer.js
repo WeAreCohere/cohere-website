@@ -36,10 +36,35 @@ const Footer = () => {
         <div className="footer__row--socials">
           <h3 className="paragraph--capital">Follow Us</h3>
           <div className="footer__icons">
-            <BsInstagram className="footer__icons--item" />
-            <BsTwitter className="footer__icons--item" />
-            <BsLinkedin className="footer__icons--item" />
-            <BsFacebook className="footer__icons--item" />
+            <a
+              href="https://www.instagram.com/wearecohere_org/"
+              target="_blank"
+              className="footer__icons--item"
+            >
+              <BsInstagram />
+            </a>
+            <a
+              href="https://twitter.com/WeAreCohere_Org"
+              target="_blank"
+              className="footer__icons--item"
+            >
+              <BsTwitter />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/company/79070903"
+              target="_blank"
+              className="footer__icons--item"
+            >
+              <BsLinkedin />
+            </a>
+            <a
+              href="https://www.facebook.com/CohereOrg"
+              target="_blank"
+              className="footer__icons--item"
+            >
+              <BsFacebook />
+            </a>
           </div>
         </div>
       </div>

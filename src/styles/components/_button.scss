@@ -40,4 +40,10 @@
     background-color: $cohere_red;
     color: $color-black;
   }
+
+  &--black {
+    border-color: $color-black !important;
+    background-color: $color-black;
+    color: $color-white;
+  }
 }

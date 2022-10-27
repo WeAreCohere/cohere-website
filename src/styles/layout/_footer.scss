@@ -46,6 +46,8 @@
     transition: all 0.3s;
 
     &--item {
+      text-decoration: none;
+      color: $cohere_black;
       &:hover {
         cursor: pointer;
         transform: scale(1.1);
