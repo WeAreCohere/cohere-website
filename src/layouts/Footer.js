@@ -40,6 +40,7 @@ const Footer = () => {
               href="https://www.instagram.com/wearecohere_org/"
               target="_blank"
               className="footer__icons--item"
+              rel="noreferrer"
             >
               <BsInstagram />
             </a>
@@ -47,6 +48,7 @@ const Footer = () => {
               href="https://twitter.com/WeAreCohere_Org"
               target="_blank"
               className="footer__icons--item"
+              rel="noreferrer"
             >
               <BsTwitter />
             </a>
@@ -55,6 +57,7 @@ const Footer = () => {
               href="https://www.linkedin.com/company/79070903"
               target="_blank"
               className="footer__icons--item"
+              rel="noreferrer"
             >
               <BsLinkedin />
             </a>
@@ -62,6 +65,7 @@ const Footer = () => {
               href="https://www.facebook.com/CohereOrg"
               target="_blank"
               className="footer__icons--item"
+              rel="noreferrer"
             >
               <BsFacebook />
             </a>

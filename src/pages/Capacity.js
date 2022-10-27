@@ -59,6 +59,7 @@ const Capacity = () => {
                 href="https://drive.google.com/file/d/1uJPxLdR1yEKDGS1rxRHgwjrvn7ppk2LH/view"
                 className="btn btn--black"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span>
                   <BsFileEarmarkPdf />
@@ -78,6 +79,7 @@ const Capacity = () => {
                   <a
                     href="https://www.unhcr.org/innovation/innovation-award-2019/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <p>Learn More</p>
                   </a>
