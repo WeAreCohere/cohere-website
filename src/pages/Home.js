@@ -28,7 +28,7 @@ import PersonHeart from "./PersonHeart";
 
 const Home = () => {
   const [blogs, setBlogs] = useState(null);
-  const [loaded, setLoaded] = useState(null);
+  const [loaded, setLoaded] = useState(true);
 
   const fetchBlogs = useCallback(async () => {
     try {
@@ -39,7 +39,6 @@ const Home = () => {
 
       const data = await response.json();
       setBlogs(data);
-      setLoaded(true);
     } catch (error) {
       setBlogs(null);
       setLoaded(false);
