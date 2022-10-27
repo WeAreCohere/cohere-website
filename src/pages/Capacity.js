@@ -3,7 +3,7 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-import { capacity, C_S } from "../images/what";
+import { capacity } from "../images/what";
 import { placeHolder } from "../images";
 
 const Capacity = () => {

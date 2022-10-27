@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { BsInstagram, BsTwitter, BsLinkedin, BsFacebook } from "react-icons/bs";
 
 const Footer = () => {

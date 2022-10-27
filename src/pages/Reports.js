@@ -176,7 +176,7 @@ const Reports = () => {
             <div className="matrix__description">
               <a
                 className="btn btn--red"
-                href="#"
+                href="/reports"
                 target="_blank"
                 rel="noreferrer"
               >
