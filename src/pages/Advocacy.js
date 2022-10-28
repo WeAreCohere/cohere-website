@@ -5,8 +5,10 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 import { advocacy } from "../images/what";
 import { placeHolder } from "../images";
+import useScrollToTop from "../hooks/scrollToTop";
 
 const Advocacy = () => {
+  useScrollToTop();
   return (
     <>
       <section className="section-how-we-do-it">

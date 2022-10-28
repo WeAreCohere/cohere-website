@@ -368,7 +368,9 @@ const Home = () => {
             </h3>
           </a>
 
-          <div className="row">{renderedNews}</div>
+          <div className="row" style={{ maxWidth: "80vw" }}>
+            {renderedNews}
+          </div>
 
           <div className="u-text-center" style={{ paddingBottom: "2rem" }}>
             <a

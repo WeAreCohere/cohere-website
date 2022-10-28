@@ -7,8 +7,11 @@ import { capacity, C_S, unhcr } from "../images/what";
 import { placeHolder } from "../images";
 
 import { BsFileEarmarkPdf } from "react-icons/bs";
+import useScrollToTop from "../hooks/scrollToTop";
 
 const Capacity = () => {
+  useScrollToTop();
+
   return (
     <>
       <section className="section-how-we-do-it">

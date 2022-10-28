@@ -1,4 +1,5 @@
 import React from "react";
+import useScrollToTop from "../hooks/scrollToTop";
 
 import {
   background,
@@ -9,6 +10,8 @@ import {
 } from "../images/involved";
 
 const GetInvolved = () => {
+  useScrollToTop();
+
   return (
     <>
       <header
