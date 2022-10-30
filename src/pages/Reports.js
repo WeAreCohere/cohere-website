@@ -13,6 +13,8 @@ import {
   XPAnnualReport2016,
 } from "../images/reports";
 
+import { CHStrategicPlan22_26 } from "../docs";
+
 import { placeHolder } from "../images";
 
 const Reports = () => {
@@ -38,7 +40,7 @@ const Reports = () => {
             <div className="matrix__description">
               <a
                 className="btn btn--red"
-                href="https://www.wearecohere.org/docs/CohereStrategicPlan22-26.pdf"
+                href={CHStrategicPlan22_26}
                 target="_blank"
                 rel="noreferrer"
               >
