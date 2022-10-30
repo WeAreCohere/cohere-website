@@ -15,6 +15,7 @@ import Funding from "./pages/Funding";
 import Advocacy from "./pages/Advocacy";
 import Capacity from "./pages/Capacity";
 import Coordination from "./pages/Coordination";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="advocacy" element={<Advocacy />} />
           <Route path="capacity" element={<Capacity />} />

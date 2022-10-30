@@ -1,0 +1,11 @@
+.notfound {
+  background-color: $cohere_black;
+  color: $color-white;
+  min-height: 100vh;
+
+  &__text {
+    padding: 3rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
