@@ -63,21 +63,23 @@ const Home = () => {
 
   renderedNews = news ? (
     news.map((data, i) => (
-      <div className="col-1-of-3" key={i}>
-        <div className="blog" style={{ backgroundColor: `${colors[i]}` }}>
-          <div className="blog__title">{data.name}</div>
-          <a href={`https://news.wearecohere.org${data.permalink}`}>
-            <LazyLoadImage
-              src={data.image}
-              alt={data.name}
-              height="100%"
-              width="100%"
-              effect="blur"
-              placeholderSrc={placeHolder}
-              className="blog__img"
-            />
-          </a>
-        </div>
+      <div
+        className="blog__item"
+        key={i}
+        style={{ backgroundColor: `${colors[i]}` }}
+      >
+        <div className="blog__title">{data.name}</div>
+        <a href={`https://news.wearecohere.org${data.permalink}`}>
+          <LazyLoadImage
+            src={data.image}
+            alt={data.name}
+            height="100%"
+            width="100%"
+            effect="blur"
+            placeholderSrc={placeHolder}
+            className="blog__img"
+          />
+        </a>
       </div>
     ))
   ) : (
@@ -368,9 +370,7 @@ const Home = () => {
             </h3>
           </a>
 
-          <div className="row" style={{ maxWidth: "80vw" }}>
-            {renderedNews}
-          </div>
+          <div className="blog">{renderedNews}</div>
 
           <div className="u-text-center" style={{ paddingBottom: "2rem" }}>
             <a

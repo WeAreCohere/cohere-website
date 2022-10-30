@@ -1,23 +1,51 @@
 .blog {
-  background-color: $cohere_orange;
-
-  text-align: center;
-  border-radius: 2px;
-  padding: 1rem;
-  margin: 1rem 0;
-  // width: 35rem;
-  width: 39rem;
-  height: 25rem;
-
+  padding: 2rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  transition: all 0.2s;
+  justify-content: center;
+  align-items: center;
 
   @include respond(tab-port) {
-    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  &__item {
+    text-align: center;
+    border-radius: 2px;
+    padding: 1rem;
+    margin: 1rem;
+
+    width: 40rem;
+    height: 25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    transition: all 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+    }
+  }
+  // background-color: $cohere_orange;
+
+  // text-align: center;
+  // border-radius: 2px;
+  // padding: 1rem;
+  // margin: 1rem 0;
+  // width: 35rem;
+  // width: 39rem;
+  // width: 40rem;
+  // height: 25rem;
+
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
 
   &__img {
     width: 100%;
@@ -33,10 +61,5 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.01);
   }
 }
