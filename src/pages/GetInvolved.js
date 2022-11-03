@@ -25,7 +25,7 @@ const GetInvolved = () => {
         className="header"
         style={{
           backgroundImage: `url(${
-            useProgressiveImage(background) || backgroundBlur
+            useProgressiveImage(background) || placeHolder
           })`,
         }}
       >
