@@ -6,7 +6,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 import {
   background,
-  backgroundBlur,
+  // backgroundBlur,
   donate,
   events,
   eventsBlur,
