@@ -15,16 +15,20 @@ import {
 import {
   advocacy,
   background,
+  backgroundBlur,
   capacity,
   coordination,
   cycle,
+  cycleBlur,
   funding,
   reframe,
+  reframeBlur,
 } from "../images/home";
 
 import { chevron, orangeChevron, placeHolder } from "../images";
 
 import PersonHeart from "./PersonHeart";
+import useProgressiveImage from "../hooks/ProgressiveImage";
 
 const Home = () => {
   const [blogs, setBlogs] = useState(null);
@@ -100,7 +104,11 @@ const Home = () => {
     <>
       <header
         className="header"
-        style={{ backgroundImage: `url(${background})` }}
+        style={{
+          backgroundImage: `url(${
+            useProgressiveImage(background) || backgroundBlur
+          })`,
+        }}
       >
         <div className="header__box">
           <h1 className="heading-primary">
@@ -135,11 +143,16 @@ const Home = () => {
               <h2 className="heading-primary u-text-center">Funding</h2>
               <Link to="/funding">
                 <figure className="story">
-                  <img
-                    className="story__img"
+                  <LazyLoadImage
                     src={advocacy}
                     alt="Refugees community direct funding"
+                    effect="blur"
+                    height="100%"
+                    width="100%"
+                    className="story__img"
+                    placeholderSrc={placeHolder}
                   />
+
                   <figcaption className="story__caption">
                     Create funding opportunities for RLOs and encourage donors
                     to fund directly
@@ -152,10 +165,14 @@ const Home = () => {
               <h2 className="heading-primary u-text-center">Capacity</h2>
               <Link to="/capacity">
                 <figure className="story">
-                  <img
-                    className="story__img"
+                  <LazyLoadImage
                     src={capacity}
                     alt="Localisation training for refugees"
+                    effect="blur"
+                    height="100%"
+                    width="100%"
+                    className="story__img"
+                    placeholderSrc={placeHolder}
                   />
                   <figcaption className="story__caption">
                     Training to ensure that RLOs can effectively respond to the
@@ -168,11 +185,16 @@ const Home = () => {
               <h2 className="heading-primary u-text-center">Coordination</h2>
               <Link to="/coordination">
                 <figure className="story">
-                  <img
-                    className="story__img"
+                  <LazyLoadImage
                     src={coordination}
                     alt="Refugee leaders meeting"
+                    effect="blur"
+                    height="100%"
+                    width="100%"
+                    className="story__img"
+                    placeholderSrc={placeHolder}
                   />
+
                   <figcaption className="story__caption">
                     Showcase the work of RLOs and connect them with other
                     organisations
@@ -184,11 +206,16 @@ const Home = () => {
               <h2 className="heading-primary u-text-center">Advocacy</h2>
               <Link to="/advocacy">
                 <figure className="story">
-                  <img
-                    className="story__img"
+                  <LazyLoadImage
                     src={funding}
                     alt="Refugee voices"
+                    effect="blur"
+                    height="100%"
+                    width="100%"
+                    className="story__img"
+                    placeholderSrc={placeHolder}
                   />
+
                   <figcaption className="story__caption">
                     Influence donor practices, and support RLOs to tell their
                     stories
@@ -308,7 +335,11 @@ const Home = () => {
           <div className="halfsection">
             <div
               className="halfsection__img"
-              style={{ backgroundImage: `url(${cycle})` }}
+              style={{
+                backgroundImage: `url(${
+                  useProgressiveImage(cycle) || cycleBlur
+                })`,
+              }}
             ></div>
             <div className="halfsection__text">
               <h2>HELP US SMASH THE CYCLE OF DEPENDENCY</h2>
@@ -354,7 +385,11 @@ const Home = () => {
             </div>
             <div
               className="halfsection__img"
-              style={{ backgroundImage: `url(${reframe})` }}
+              style={{
+                backgroundImage: `url(${
+                  useProgressiveImage(reframe) || reframeBlur
+                })`,
+              }}
             ></div>
           </div>
         </section>

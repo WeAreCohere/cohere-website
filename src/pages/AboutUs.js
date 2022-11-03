@@ -1,17 +1,27 @@
 import React from "react";
 
 // Images
-import { background, collab } from "../images/about";
+import {
+  background,
+  backgroundBlur,
+  collab,
+  collabBlur,
+} from "../images/about";
 import { chevron } from "../images";
 
 import Timeline from "../components/Timeline";
+import useProgressiveImage from "../hooks/ProgressiveImage";
 
 const AboutUs = () => {
   return (
     <>
       <header
         className="header"
-        style={{ backgroundImage: `url(${background})` }}
+        style={{
+          backgroundImage: `url(${
+            useProgressiveImage(background) || backgroundBlur
+          })`,
+        }}
       >
         <div className="header__box header__box--top">
           <h1 className="heading-primary u-text-center">
@@ -78,7 +88,11 @@ const AboutUs = () => {
             </div>
             <div
               className="halfsection__img"
-              style={{ backgroundImage: `url(${collab})` }}
+              style={{
+                backgroundImage: `url(${
+                  useProgressiveImage(collab) || collabBlur
+                })`,
+              }}
             ></div>
           </div>
         </section>

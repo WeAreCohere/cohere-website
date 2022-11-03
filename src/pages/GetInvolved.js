@@ -1,13 +1,20 @@
 import React from "react";
+import useProgressiveImage from "../hooks/ProgressiveImage";
 import useScrollToTop from "../hooks/scrollToTop";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 import {
   background,
+  backgroundBlur,
   donate,
   events,
+  eventsBlur,
   fund,
   volunteer,
 } from "../images/involved";
+
+import { placeHolder } from "../images";
 
 const GetInvolved = () => {
   useScrollToTop();
@@ -16,7 +23,11 @@ const GetInvolved = () => {
     <>
       <header
         className="header"
-        style={{ backgroundImage: `url(${background})` }}
+        style={{
+          backgroundImage: `url(${
+            useProgressiveImage(background) || backgroundBlur
+          })`,
+        }}
       >
         <div className="header__box">
           <h1 className="heading-primary">
@@ -50,7 +61,14 @@ const GetInvolved = () => {
                   Give the gift of independence today with a small monthly
                   donation.
                 </p>
-                <img src={donate} alt="donate" />
+                <LazyLoadImage
+                  src={donate}
+                  alt="donate"
+                  // height="100%"
+                  width="100%"
+                  effect="blur"
+                  placeholderSrc={placeHolder}
+                />
               </div>
             </div>
             <div className="col-1-of-3">
@@ -64,7 +82,14 @@ const GetInvolved = () => {
                 <p className="paragraph u-text-center">
                   Looking for change? You can help us change futures.
                 </p>
-                <img src={fund} alt="fund" />
+                <LazyLoadImage
+                  src={fund}
+                  alt="fund"
+                  // height="100%"
+                  width="100%"
+                  effect="blur"
+                  placeholderSrc={placeHolder}
+                />
               </div>
             </div>
             <div className="col-1-of-3">
@@ -79,7 +104,14 @@ const GetInvolved = () => {
                   Share you time and skills. Our future looks better with you in
                   it.
                 </p>
-                <img src={volunteer} alt="volunteer" />
+                <LazyLoadImage
+                  src={volunteer}
+                  alt="volunteer"
+                  // height="100%"
+                  width="100%"
+                  effect="blur"
+                  placeholderSrc={placeHolder}
+                />
               </div>
             </div>
           </div>
@@ -89,7 +121,11 @@ const GetInvolved = () => {
           <div className="halfsection">
             <div
               className="halfsection__img"
-              style={{ backgroundImage: `url(${events})` }}
+              style={{
+                backgroundImage: `url(${
+                  useProgressiveImage(events) || eventsBlur
+                })`,
+              }}
             ></div>
             <div className="halfsection__text">
               <h1 className="heading-primary">EVENTS</h1>
