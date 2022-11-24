@@ -14,7 +14,7 @@ const Footer = () => {
           <p className="paragraph--black">P.O Box 61716-00200</p>
         </div>
         <div className="footer__row--items">
-          <h3>Uganda ffice</h3>
+          <h3>Uganda Office</h3>
           <p className="paragraph--black">Hanlon Road</p>
           <p className="paragraph--black">Nsambya, Kampala</p>
         </div>
