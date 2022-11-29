@@ -15,3 +15,5 @@ export const XPAnnualReport2018 = require("./Xavier-Project-Annual-Report-2018.j
 export const XPChildProtection = require("./Xavier-Project-Child-Protection-Policy-2021.jpg");
 export const XPStrategicPlan18 = require("./Xavier-Project-Strategic-Plan-2015-2018.jpg");
 export const XPStrategicPlan21 = require("./Xavier-Project-Strategic-Plan-2019-2021.jpg");
+
+export const AAPImage = require("./Accountability-of-affected-persons.png");

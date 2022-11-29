@@ -16,6 +16,7 @@ import Advocacy from "./pages/Advocacy";
 import Capacity from "./pages/Capacity";
 import Coordination from "./pages/Coordination";
 import NotFound from "./pages/NotFound";
+import Reframe from "./pages/Reframe";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="reports" element={<Reports />} />
           <Route path="team" element={<Team />} />
           <Route path="getinvolved" element={<GetInvolved />} />
+          <Route path="reframe" element={<Reframe />} />
         </Routes>
         <Footer />
       </OverlayProvider>

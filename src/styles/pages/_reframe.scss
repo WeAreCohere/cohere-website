@@ -1,0 +1,25 @@
+.section-reframe-page {
+  min-height: 100vh;
+  background-color: $cohere_black;
+  padding: 5rem;
+}
+
+.reframe__link {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: $color-white;
+  transition: all 0.5s;
+
+  & li:hover {
+    transform: scale(1.01);
+    transform: scale(1.01);
+    cursor: pointer;
+  }
+}
+
+.section-pooledfunds {
+  min-height: 70vh;
+  background-color: $cohere_red;
+  padding: 5rem;
+}

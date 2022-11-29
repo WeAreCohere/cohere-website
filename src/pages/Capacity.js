@@ -31,11 +31,26 @@ const Capacity = () => {
               awarded the UNHCR Innovation Award for Partnerships at the World
               Refugee Forum in Geneva, Switzerland in 2019.
             </p>
+
+            <p className="paragraph paragraph--black">
+              The emphasis of the course is on sharing. We have learnt that
+              through our partnerships and across networks that sharing
+              knowledge and experience strengthens everyones work. This course
+              is constantly evolving to incorporate the learnings and deliver
+              programmes that are partners need to grow.
+            </p>
           </div>
-          <div className="col-1-of-2">
+          <div
+            className="col-1-of-2"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <LazyLoadImage
               src={capacity}
-              height="100%"
+              height="80%"
               width="100%"
               effect="blur"
               placeholderSrc={placeHolder}

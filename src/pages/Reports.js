@@ -11,9 +11,10 @@ import {
   XPAnnualReport2018,
   XPAnnualReport2017,
   XPAnnualReport2016,
+  AAPImage,
 } from "../images/reports";
 
-import { CHStrategicPlan22_26 } from "../docs";
+import { CHStrategicPlan22_26, AAP } from "../docs";
 
 import { placeHolder } from "../images";
 
@@ -187,6 +188,329 @@ const Reports = () => {
               <h3>Xavier Project Annual Report 2016</h3>
             </div>
           </figure>
+
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={AAPImage}
+              alt="Accountability To Affected Persons (AAP) Frameworks"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href={AAP}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Accountability To Affected Persons (AAP) Frameworks</h3>
+            </div>
+          </figure>
+          {/* <figure className="matrix__item">
+            <LazyLoadImage
+              src={placeHolder}
+              alt="Placeholder Test"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Placeholder Test</h3>
+            </div>
+          </figure>
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={placeHolder}
+              alt="Placeholder Test"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Placeholder Test</h3>
+            </div>
+          </figure>
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={placeHolder}
+              alt="Placeholder Test"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Placeholder Test</h3>
+            </div>
+          </figure>
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={placeHolder}
+              alt="Placeholder Test"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Placeholder Test</h3>
+            </div>
+          </figure>
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={placeHolder}
+              alt="Placeholder Test"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Placeholder Test</h3>
+            </div>
+          </figure>
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={placeHolder}
+              alt="Placeholder Test"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Placeholder Test</h3>
+            </div>
+          </figure>
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={placeHolder}
+              alt="Placeholder Test"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Placeholder Test</h3>
+            </div>
+          </figure>
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={placeHolder}
+              alt="Placeholder Test"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Placeholder Test</h3>
+            </div>
+          </figure>
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={placeHolder}
+              alt="Placeholder Test"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Placeholder Test</h3>
+            </div>
+          </figure>
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={placeHolder}
+              alt="Placeholder Test"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Placeholder Test</h3>
+            </div>
+          </figure>
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={placeHolder}
+              alt="Placeholder Test"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Placeholder Test</h3>
+            </div>
+          </figure>
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={placeHolder}
+              alt="Placeholder Test"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Placeholder Test</h3>
+            </div>
+          </figure>
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={placeHolder}
+              alt="Placeholder Test"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Placeholder Test</h3>
+            </div>
+          </figure> */}
         </div>
       </section>
     </>

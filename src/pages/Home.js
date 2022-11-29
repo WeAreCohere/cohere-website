@@ -368,19 +368,20 @@ const Home = () => {
             <div className="halfsection__text">
               <h2>REFRAME</h2>
               <p>
-                Reframe was launched in 2021, and is powered by Cohere and its
-                partners Solidarity Initiative for Refugees and Youth Voices
-                Community. The platform aims to be a solution to multiple
-                challenges refugee-led organisations worldwide are facing.
-              </p>
-              <p>
-                Through connection, collaboration and communication we hope
-                Reframe overcomes some of these challenges, and enables
-                refugee-led organisations to access the tools they need to
+                Reframe was launched in 2021, and is powered by Cohere and
+                partners. The platform aims to promote the work of RLOs and help
+                them to overcome some of the challenges they are facing. By
+                sharing resources, building networks and accessing direct
+                funding, it will enable them to access the tools they need to
                 transform their communities.
               </p>
+              <p>
+                We also want donors and supporters to be able to connect with
+                and directly fund refugee-led organisations through the
+                platform.
+              </p>
               <a href="https://reframe.network/" className="btn btn--white">
-                Visit
+                Visit Reframe
               </a>
             </div>
             <div

@@ -24,6 +24,11 @@ const NavList = () => {
               Reports
             </Link>
           </li>
+          <li>
+            <Link className="navigation__itemdrop--link" to="/reframe">
+              Reframe
+            </Link>
+          </li>
         </ul>
       </li>
       <li className="navigation__item">
