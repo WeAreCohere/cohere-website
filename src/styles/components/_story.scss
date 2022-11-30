@@ -7,6 +7,11 @@
     transition: all 0.5s;
     transform: scale(1.15);
     backface-visibility: hidden;
+
+    @include respond(tab-port) {
+      width: 50%;
+      transform: translateX(50%);
+    }
   }
 
   &__caption {

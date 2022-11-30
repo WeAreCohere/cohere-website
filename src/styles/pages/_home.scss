@@ -1,3 +1,19 @@
+.section-video-embed {
+  background-color: $cohere_black;
+  min-height: 75vh;
+
+  &--video {
+    margin: 0 auto;
+    padding: 3rem 5rem;
+    height: 100vh;
+    width: 100%;
+
+    @include respond(tab-port) {
+      height: 50vh;
+    }
+  }
+}
+
 .section-what-we-do {
   background-color: $cohere_red;
   min-height: 75vh;

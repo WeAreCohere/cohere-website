@@ -128,6 +128,22 @@ const Home = () => {
       </header>
 
       <main>
+        <section className="section-video-embed">
+          <h1 className="heading-primary u-text-center ">we are cohere</h1>
+
+          <div className="section-video-embed--video">
+            <iframe
+              style={{ display: "block", margin: " 0 auto" }}
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/_s0YpuwOLrc"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </section>
         <section className="section-what-we-do">
           <h1 className="heading-primary u-text-center ">what we do</h1>
           <p
@@ -290,7 +306,7 @@ const Home = () => {
         </section>
 
         <section id="we-are-cohere" className="section-we-are-cohere">
-          <h1 className="heading-primary u-text-center ">we are cohere</h1>
+          <h1 className="heading-primary u-text-center ">COMING TOGETHER</h1>
           <div className="row">
             {/* <div
               className="section-we-are-cohere--image"

@@ -31,6 +31,11 @@
       cursor: pointer;
       transform: scale(1.01);
     }
+
+    @include respond(tab-port) {
+      width: 30rem;
+      height: 20rem;
+    }
   }
   // background-color: $cohere_orange;
 
@@ -52,6 +57,10 @@
     // height: 100%;
     height: 20rem;
     object-fit: cover;
+
+    @include respond(tab-port) {
+      height: 15rem;
+    }
   }
 
   &__title {
