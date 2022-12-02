@@ -37,6 +37,11 @@ const NavList = () => {
         </a>
       </li>
       <li className="navigation__item">
+        <Link to="/careers" className="navigation__link">
+          Careers
+        </Link>
+      </li>
+      <li className="navigation__item">
         <Link to="/getinvolved" className="navigation__link">
           Get Involved
         </Link>

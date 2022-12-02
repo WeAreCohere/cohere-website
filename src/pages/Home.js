@@ -36,7 +36,7 @@ const Home = () => {
 
   const fetchBlogs = useCallback(async () => {
     try {
-      const response = await fetch("https://calm-inlet-18337.herokuapp.com/");
+      const response = await fetch("https://reframe-api.herokuapp.com/news");
       if (!response.ok) {
         throw new Error("Couldn't fetch blogs'");
       }
