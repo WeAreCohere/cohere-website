@@ -38,7 +38,6 @@ const Careers = () => {
 
   let renderedJobs = ``;
   let filteredJobs = jobs && filterArr(jobs.results.data, "jobs");
-  let colors = ["#ff9343", "#72ccca", "#ff6865"];
   console.log(filteredJobs);
 
   renderedJobs = filteredJobs ? (
