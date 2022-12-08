@@ -134,8 +134,8 @@ const Home = () => {
           <div className="section-video-embed--video">
             <iframe
               style={{ display: "block", margin: " 0 auto" }}
-              width="100%"
-              height="100%"
+              width="80%"
+              height="80%"
               src="https://www.youtube.com/embed/_s0YpuwOLrc"
               title="YouTube video player"
               frameBorder="0"

@@ -1,11 +1,11 @@
 .section-video-embed {
   background-color: $cohere_black;
-  min-height: 75vh;
+  min-height: 65vh;
 
   &--video {
     margin: 0 auto;
-    padding: 3rem 5rem;
-    height: 100vh;
+    padding: 3rem 0rem;
+    height: 88vh;
     width: 100%;
 
     @include respond(tab-port) {
