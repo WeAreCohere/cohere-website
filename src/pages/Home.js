@@ -62,7 +62,9 @@ const Home = () => {
   };
 
   let renderedNews = ``;
-  let news = blogs && filterArr(blogs.results.data, "news");
+  let renderedJobs = ``;
+  const news = blogs && filterArr(blogs.results.data, "news");
+  const jobs = blogs && filterArr(blogs.results.data, "jobs");
   let colors = ["#ff9343", "#72ccca", "#ff6865"];
 
   renderedNews = news ? (
@@ -92,8 +94,41 @@ const Home = () => {
     </div>
   );
 
+  renderedJobs = jobs ? (
+    jobs.map((data, i) => (
+      <div
+        className="blog__item"
+        key={i}
+        style={{ backgroundColor: `${colors[i]}` }}
+      >
+        <div className="blog__title">{data.name}</div>
+        <a href={`https://news.wearecohere.org${data.permalink}`}>
+          <LazyLoadImage
+            src={data.image}
+            alt={data.name}
+            height="100%"
+            width="100%"
+            effect="blur"
+            placeholderSrc={placeHolder}
+            className="blog__img"
+          />
+        </a>
+      </div>
+    ))
+  ) : (
+    <div style={{ margin: "0 auto" }}>
+      <p className="paragraph">Loading 🚀...</p>
+    </div>
+  );
+
   if (!loaded) {
     renderedNews = (
+      <div style={{ margin: "0 auto" }}>
+        <p className="paragraph">Something went wrong 📛</p>
+      </div>
+    );
+
+    renderedJobs = (
       <div style={{ margin: "0 auto" }}>
         <p className="paragraph">Something went wrong 📛</p>
       </div>
@@ -432,6 +467,25 @@ const Home = () => {
               Help us smash the cycle of dependency
             </a>
           </div>
+        </section>
+        <section className="section-jobs">
+          <h1
+            className="heading-primary u-text-center"
+            style={{ color: "#282828" }}
+          >
+            Jobs
+          </h1>
+          <a
+            className="heading-primary--sub u-text-center"
+            style={{ color: "#282828" }}
+            href="https://news.wearecohere.org/categories/jobs/"
+          >
+            <h3>
+              View all <span>&rarr;</span>
+            </h3>
+          </a>
+
+          <div className="blog">{renderedJobs}</div>
         </section>
       </main>
     </>
