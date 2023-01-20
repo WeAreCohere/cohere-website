@@ -7,7 +7,7 @@ const Timeline = () => {
         <div className="timeline">
           <div className="timeline-container primary">
             <div className="timeline-icon">
-              <p>2018</p>
+              <p>2008</p>
             </div>
             <div className="timeline-body">
               <p>
