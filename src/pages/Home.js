@@ -117,7 +117,9 @@ const Home = () => {
     ))
   ) : (
     <div style={{ margin: "0 auto" }}>
-      <p className="paragraph">Loading 🚀...</p>
+      <p className="paragraph" style={{ color: "#282828" }}>
+        Loading 🚀...
+      </p>
     </div>
   );
 
