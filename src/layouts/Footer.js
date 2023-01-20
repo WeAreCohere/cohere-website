@@ -77,7 +77,7 @@ const Footer = () => {
         <p className="paragraph--small">
           Cohere, Registered in. England and Wales, Registered Address: Dean
           Farm, Oaksey, Malmesbury, Wilts, SN16 9SB. UK Charity No: 1153638 /
-          Uganda NGO cert. S5914/10385 / Kenya NGO cert.
+          Uganda NGO cert. INDR10385305NB / Kenya NGO cert.
           OP.218/051/12-0511/8654.
         </p>
       </div>
