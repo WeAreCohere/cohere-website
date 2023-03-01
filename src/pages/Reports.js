@@ -12,9 +12,16 @@ import {
   XPAnnualReport2017,
   XPAnnualReport2016,
   AAPImage,
+  refugeeParticipationReportImg,
+  refugeeParticipationReportExecSumImg,
 } from "../images/reports";
 
-import { CHStrategicPlan22_26, AAP } from "../docs";
+import {
+  CHStrategicPlan22_26,
+  AAP,
+  RefugeeParticipationReport,
+  RefugeeParticipationReportExecSummary,
+} from "../docs";
 
 import { placeHolder } from "../images";
 
@@ -27,6 +34,52 @@ const Reports = () => {
         </h1>
 
         <div className="matrix">
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={refugeeParticipationReportExecSumImg}
+              alt="Refugee Participation Report"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href={RefugeeParticipationReportExecSummary}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Refugee Participation Report Executive Summary</h3>
+            </div>
+          </figure>
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={refugeeParticipationReportImg}
+              alt="Refugee Participation Report"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href={RefugeeParticipationReport}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Refugee Participation Report</h3>
+            </div>
+          </figure>
           <figure className="matrix__item">
             <LazyLoadImage
               src={CohereStrategicPlan}
