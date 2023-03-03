@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const NavList = () => {
+  /* eslint-disable */
   return (
     <>
       <li className="navigation__item">
@@ -20,11 +21,6 @@ const NavList = () => {
             </Link>
           </li>
           <li>
-            <Link className="navigation__itemdrop--link" to="/reports">
-              Reports
-            </Link>
-          </li>
-          <li>
             <Link className="navigation__itemdrop--link" to="/reframe">
               Reframe
             </Link>
@@ -32,10 +28,28 @@ const NavList = () => {
         </ul>
       </li>
       <li className="navigation__item">
-        <a href="https://news.wearecohere.org/" className="navigation__link">
-          Blogs & News
+        <a href="javascript:void(0)" className="navigation__link">
+          Blogs, News & Reports
         </a>
+        <ul className="navigation__itemdrop">
+          <li>
+            <Link to="/reports" className="navigation__itemdrop--link">
+              Reports
+            </Link>
+          </li>
+          <li>
+            <a
+              href="https://news.wearecohere.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="navigation__itemdrop--link"
+            >
+              Blogs & News
+            </a>
+          </li>
+        </ul>
       </li>
+
       <li className="navigation__item">
         <Link to="/careers" className="navigation__link">
           Careers
