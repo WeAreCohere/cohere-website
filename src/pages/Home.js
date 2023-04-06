@@ -62,9 +62,9 @@ const Home = () => {
   };
 
   let renderedNews = ``;
-  let renderedJobs = ``;
+  // let renderedJobs = ``;
   const news = blogs && filterArr(blogs.results.data, "news");
-  const jobs = blogs && filterArr(blogs.results.data, "jobs");
+  // const jobs = blogs && filterArr(blogs.results.data, "jobs");
   let colors = ["#ff9343", "#72ccca", "#ff6865"];
 
   renderedNews = news ? (
@@ -94,34 +94,34 @@ const Home = () => {
     </div>
   );
 
-  renderedJobs = jobs ? (
-    jobs.map((data, i) => (
-      <div
-        className="blog__item"
-        key={i}
-        style={{ backgroundColor: `${colors[i]}` }}
-      >
-        <div className="blog__title">{data.name}</div>
-        <a href={`https://news.wearecohere.org${data.permalink}`}>
-          <LazyLoadImage
-            src={data.image}
-            alt={data.name}
-            height="100%"
-            width="100%"
-            effect="blur"
-            placeholderSrc={placeHolder}
-            className="blog__img"
-          />
-        </a>
-      </div>
-    ))
-  ) : (
-    <div style={{ margin: "0 auto" }}>
-      <p className="paragraph" style={{ color: "#282828" }}>
-        Loading 🚀...
-      </p>
-    </div>
-  );
+  // renderedJobs = jobs ? (
+  //   jobs.map((data, i) => (
+  //     <div
+  //       className="blog__item"
+  //       key={i}
+  //       style={{ backgroundColor: `${colors[i]}` }}
+  //     >
+  //       <div className="blog__title">{data.name}</div>
+  //       <a href={`https://news.wearecohere.org${data.permalink}`}>
+  //         <LazyLoadImage
+  //           src={data.image}
+  //           alt={data.name}
+  //           height="100%"
+  //           width="100%"
+  //           effect="blur"
+  //           placeholderSrc={placeHolder}
+  //           className="blog__img"
+  //         />
+  //       </a>
+  //     </div>
+  //   ))
+  // ) : (
+  //   <div style={{ margin: "0 auto" }}>
+  //     <p className="paragraph" style={{ color: "#282828" }}>
+  //       Loading 🚀...
+  //     </p>
+  //   </div>
+  // );
 
   if (!loaded) {
     renderedNews = (
@@ -130,11 +130,11 @@ const Home = () => {
       </div>
     );
 
-    renderedJobs = (
-      <div style={{ margin: "0 auto" }}>
-        <p className="paragraph">Something went wrong 📛</p>
-      </div>
-    );
+    // renderedJobs = (
+    //   <div style={{ margin: "0 auto" }}>
+    //     <p className="paragraph">Something went wrong 📛</p>
+    //   </div>
+    // );
   }
 
   return (
@@ -470,7 +470,7 @@ const Home = () => {
             </a>
           </div>
         </section>
-        <section className="section-jobs">
+        {/* <section className="section-jobs">
           <h1
             className="heading-primary u-text-center"
             style={{ color: "#282828" }}
@@ -488,7 +488,7 @@ const Home = () => {
           </a>
 
           <div className="blog">{renderedJobs}</div>
-        </section>
+        </section> */}
       </main>
     </>
   );
