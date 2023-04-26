@@ -292,7 +292,7 @@ const Home = () => {
           <div className="impact__grid">
             <div className="impact__grid--item">
               <BsPeopleFill className="impact__grid--icon" />
-              <h4 className="u-cohere-orange">33</h4>
+              <h4 className="u-cohere-orange">43</h4>
               <p>Partner refugee-led organisations</p>
             </div>
             <div className="impact__grid--item">
@@ -305,12 +305,12 @@ const Home = () => {
             </div>
             <div className="impact__grid--item">
               <BsGlobe className="impact__grid--icon" />
-              <h4 className="u-cohere-orange">4</h4>
-              <p>Countries: Kenya, Uganda, Malawi, South Africa</p>
+              <h4 className="u-cohere-orange">5</h4>
+              <p>Countries: Kenya, Uganda, Malawi, South Africa, Nigeria</p>
             </div>
             <div className="impact__grid--item">
               <BsBank2 className="impact__grid--icon" />
-              <h4 className="u-cohere-orange">8</h4>
+              <h4 className="u-cohere-orange">20</h4>
               <p>
                 Institutional donors committed to directly fund refugee-led
                 organisations
@@ -318,8 +318,8 @@ const Home = () => {
             </div>
             <div className="impact__grid--item">
               <PersonHeart />
-              <h4 className="u-cohere-orange">24,479</h4>
-              <p>People reached in 2021</p>
+              <h4 className="u-cohere-orange">55,738</h4>
+              <p>People reached in 2022</p>
             </div>
             <div className="impact__grid--item">
               <BsLaptop className="impact__grid--icon" />
