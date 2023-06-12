@@ -149,7 +149,7 @@ const Home = () => {
       >
         <div className="header__box">
           <h1 className="heading-primary">
-            <span className="heading-primary--main">Transform Power</span>
+            <span className="heading-primary--main">Transfer Power</span>
             <span className="heading-primary--main">Transform Communities</span>
           </h1>
           <p className="header__paragraph" style={{ width: "50%" }}>
