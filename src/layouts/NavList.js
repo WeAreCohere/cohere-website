@@ -28,7 +28,13 @@ const NavList = () => {
         </ul>
       </li>
       <li className="navigation__item">
-        <a href="javascript:void(0)" className="navigation__link">
+        <a
+          href="/"
+          className="navigation__link"
+          onClick={(e) => {
+            e.preventDefault();
+          }}
+        >
           Blogs, News & Reports
         </a>
         <ul className="navigation__itemdrop">

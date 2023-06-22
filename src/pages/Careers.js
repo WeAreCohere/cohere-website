@@ -38,7 +38,7 @@ const Careers = () => {
 
   let renderedJobs = ``;
   let filteredJobs = jobs && filterArr(jobs.results.data, "jobs");
-  console.log(filteredJobs);
+  // console.log(filteredJobs);
 
   renderedJobs = filteredJobs ? (
     filteredJobs.map((data, i) => (
