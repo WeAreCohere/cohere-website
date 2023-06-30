@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-import ReactGA from "react-ga";
+// import ReactGA from "react-ga";
 
 import Overlay from "./layouts/Overlay";
 import "./styles/main.scss";
@@ -20,13 +20,13 @@ import NotFound from "./pages/NotFound";
 import Reframe from "./pages/Reframe";
 import Careers from "./pages/Careers";
 
-const TRACKING_ID = "G-49VGBE0RLB";
-ReactGA.initialize(TRACKING_ID);
+// const TRACKING_ID = "G-49VGBE0RLB";
+// ReactGA.initialize(TRACKING_ID);
 
 function App() {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  // }, []);
   return (
     <>
       <OverlayProvider>
