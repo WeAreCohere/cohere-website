@@ -20,7 +20,7 @@ import NotFound from "./pages/NotFound";
 import Reframe from "./pages/Reframe";
 import Careers from "./pages/Careers";
 
-const TRACKING_ID = "G-32B4L6NH86";
+const TRACKING_ID = "G-X5NVBEWG1Q";
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
