@@ -1,19 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import TagManager from "react-gtm-module";
+// import ReactGA from "react-ga4";
+// import TagManager from "react-gtm-module";
 
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const tagManagerArgs = {
-  gtmId: "GTM-p89FQB2",
-};
-
-TagManager.initialize(tagManagerArgs);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// Initialize GA4
+// ReactGA.initialize("G-4YN1LMRHZC");
 root.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -22,7 +20,15 @@ root.render(
   </React.StrictMode>
 );
 
+// const sendAnalytics = () => {
+//   ReactGA.send({
+//     hitType: "pageview",
+//     page: window.location.pathname,
+//   });
+// };
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// reportWebVitals(sendAnalytics);
 reportWebVitals();
