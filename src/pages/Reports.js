@@ -14,6 +14,7 @@ import {
   AAPImage,
   refugeeParticipationReportImg,
   refugeeParticipationReportExecSumImg,
+  ProcurementUganda,
 } from "../images/reports";
 
 import {
@@ -21,6 +22,7 @@ import {
   AAP,
   RefugeeParticipationReport,
   RefugeeParticipationReportExecSummary,
+  ThreePathways,
 } from "../docs";
 
 import { placeHolder } from "../images";
@@ -34,6 +36,30 @@ const Reports = () => {
         </h1>
 
         <div className="matrix">
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={ProcurementUganda}
+              alt="Three Pathways Internal Equity Learning Journey"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href={ThreePathways}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Three Pathways Internal Equity Learning Journey</h3>
+            </div>
+          </figure>
+
           <figure className="matrix__item">
             <LazyLoadImage
               src={refugeeParticipationReportExecSumImg}
