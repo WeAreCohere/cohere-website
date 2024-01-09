@@ -4,7 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 // Images
-import { Carol, Edmund, Joseph, Mildred, Ruth, Sharon } from "../images/team";
+import { Edmund, Joseph, Mildred, Ruth, Sharon } from "../images/team";
 import { placeHolder } from "../images";
 
 const Team = () => {
@@ -100,7 +100,7 @@ const Team = () => {
               <p>Head of HR</p>
             </div>
           </figure>
-          <figure className="matrix__item">
+          {/* <figure className="matrix__item">
             <LazyLoadImage
               src={Carol}
               alt="Carol Kabatanya"
@@ -115,7 +115,7 @@ const Team = () => {
               <h2>Carol Kabatanya</h2>
               <p>Head of Compliance & Programmes</p>
             </div>
-          </figure>
+          </figure> */}
           <figure className="matrix__item">
             <LazyLoadImage
               src={Ruth}
