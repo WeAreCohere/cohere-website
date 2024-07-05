@@ -1,0 +1,55 @@
+.section-introduction {
+  background-color: $cohere_black;
+  color: $color-white;
+  min-height: 65vh;
+}
+
+.section-commitment {
+  background-color: $cohere_black;
+  color: $color-white;
+  min-height: 55vh;
+}
+
+.section-knowledge-gap {
+  background-color: $cohere_black;
+  color: $color-white;
+  color: $color-white;
+  min-height: 65vh;
+}
+
+.section-companion-guide {
+  background-color: $cohere_black;
+  color: $color-white;
+  min-height: 55vh;
+}
+
+li {
+  font-family: $font-spacegrotesk;
+  font-size: 2rem !important;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+
+.section-who-should-read {
+  background-color: $cohere_black;
+  color: $color-white;
+  min-height: 45vh;
+}
+
+.divider-formating {
+  text-align: center;
+  padding: 3rem;
+  margin: auto;
+  max-width: 100rem;
+
+  p {
+    margin: 0;
+    text-align: justify;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

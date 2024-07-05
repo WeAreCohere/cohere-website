@@ -19,6 +19,7 @@ import Coordination from "./pages/Coordination";
 import NotFound from "./pages/NotFound";
 import Reframe from "./pages/Reframe";
 import Careers from "./pages/Careers";
+import OrganisationalPathways from "./pages/OrganisationalPathways";
 
 const TRACKING_ID = "G-4YN1LMRHZC";
 ReactGA.initialize(TRACKING_ID);
@@ -49,6 +50,10 @@ function App() {
           <Route path="getinvolved" element={<GetInvolved />} />
           <Route path="reframe" element={<Reframe />} />
           <Route path="careers" element={<Careers />} />
+          <Route
+            path="organisational-pathways"
+            element={<OrganisationalPathways />}
+          />
         </Routes>
         <Footer />
       </OverlayProvider>
