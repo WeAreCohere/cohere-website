@@ -4,6 +4,8 @@ import {
   generalVis,
   organisationalPathways,
 } from "../images/organisationalPathways";
+// DOCUMENTS
+import { organisationalPathwaysDoc } from "../docs";
 import useProgressiveImage from "../hooks/ProgressiveImage";
 
 const OrganisationalPathways = () => {
@@ -30,16 +32,23 @@ const OrganisationalPathways = () => {
             Participation
           </h2>
 
-          <div
-            className="btn btn--white"
-            style={{
-              margin: "2rem auto",
-              backgroundColor: "#ff9343",
-              borderColor: "#ff9343",
-            }}
+          <a
+            href={organisationalPathwaysDoc}
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none", margin: "2rem auto" }}
           >
-            Download{" "}
-          </div>
+            <div
+              className="btn btn--white"
+              style={{
+                margin: "0 auto",
+                backgroundColor: "#ff9343",
+                borderColor: "#ff9343",
+              }}
+            >
+              Download{" "}
+            </div>
+          </a>
 
           <div className="divider-formating">
             <p className="paragraph u-text-center">
@@ -144,16 +153,23 @@ const OrganisationalPathways = () => {
               may also find relevant insights.
             </p>
 
-            <div
-              className="btn btn--white"
-              style={{
-                margin: "0 auto",
-                backgroundColor: "#ff9343",
-                borderColor: "#ff9343",
-              }}
+            <a
+              href={organisationalPathwaysDoc}
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: "none" }}
             >
-              Download{" "}
-            </div>
+              <div
+                className="btn btn--white"
+                style={{
+                  margin: "0 auto",
+                  backgroundColor: "#ff9343",
+                  borderColor: "#ff9343",
+                }}
+              >
+                Download{" "}
+              </div>
+            </a>
           </div>
         </section>
       </main>
