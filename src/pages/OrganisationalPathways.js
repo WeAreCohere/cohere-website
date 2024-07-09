@@ -1,6 +1,9 @@
 import React from "react";
 // IMAGES
-import { companionGuide } from "../images/organisationalPathways";
+import {
+  generalVis,
+  organisationalPathways,
+} from "../images/organisationalPathways";
 import useProgressiveImage from "../hooks/ProgressiveImage";
 
 const OrganisationalPathways = () => {
@@ -12,13 +15,31 @@ const OrganisationalPathways = () => {
             className="heading-primary u-text-center"
             style={{ paddingTop: "3rem" }}
           >
-            Introducing Our New Report
+            Introducing Our New Report...
           </h2>
+
+          <div
+            className="divider-formating"
+            style={{ height: "50rem", margin: "auto" }}
+          >
+            <img src={useProgressiveImage(organisationalPathways)} alt="" />
+          </div>
 
           <h2 className="heading-primary u-text-center">
             Five Organisational Pathways for Enabling Meaningful Refugee
             Participation
           </h2>
+
+          <div
+            className="btn btn--white"
+            style={{
+              margin: "2rem auto",
+              backgroundColor: "#ff9343",
+              borderColor: "#ff9343",
+            }}
+          >
+            Download{" "}
+          </div>
 
           <div className="divider-formating">
             <p className="paragraph u-text-center">
@@ -37,7 +58,7 @@ const OrganisationalPathways = () => {
           <div className="divider-formating">
             <p className="paragraph u-text-center">
               As an organisation committed to uplifting Refugee-Led
-              Organizations (RLOs), Cohere is deeply invested in promoting
+              Organisations (RLOs), Cohere is deeply invested in promoting
               Meaningful Refugee Participation (MRP) for both ethical and impact
               reasons. Cohere believes it is morally imperative that people of
               forced displacement have the autonomy to make critical decisions
@@ -48,7 +69,9 @@ const OrganisationalPathways = () => {
               accountable to communities, leading to greater overall impact.
             </p>
 
-            <img src={useProgressiveImage(companionGuide)} alt="" />
+            <div style={{ height: "50rem", width: "50rem", margin: "0 auto" }}>
+              <img src={useProgressiveImage(generalVis)} alt="" />
+            </div>
           </div>
         </section>
 
@@ -70,22 +93,32 @@ const OrganisationalPathways = () => {
               Workshop Series (IWS) titled "Building Organisational Pathways
               towards Meaningful Participation and Refugee Leadership.” This
               series, which ran between October 2023 and April 2024, is
-              available on Cohere’s YouTube channel. Through this series,
-              experts explain and detail the mindsets, behaviours, and actions
-              necessary to overcome internal barriers to MRP.{" "}
+              available on{" "}
+              <a
+                href="https://www.youtube.com/playlist?list=PLDt4iEW6JxoLqcZEcvaaIZJ070g0yq4hf"
+                style={{ textDecoration: "none", color: "#72ccca" }}
+              >
+                Cohere’s YouTube channel
+              </a>
+              . Through this series, experts explain and detail the mindsets,
+              behaviours, and actions necessary to overcome internal barriers to
+              MRP.{" "}
+            </p>
+            <p className="paragraph u-text-center">
+              Our new paper is a companion to each of the five IWS sessions. The
+              topics focused on are:
             </p>
           </div>
         </section>
 
         <section className="section-companion-guide">
           <div className="divider-formating">
-            <p className="paragraph u-text-center">
-              Our new paper is a companion to each of the five IWS sessions. The
-              topics focused on are:
-            </p>
             <ul
-              className="paragraph"
-              style={{ textAlign: "justify", listStyle: "none" }}
+              style={{
+                textAlign: "justify",
+                paddingLeft: "3rem",
+                color: "#72ccca",
+              }}
             >
               <li>Equity Learning Journeys (ELJs)</li>
               <li>
@@ -111,7 +144,14 @@ const OrganisationalPathways = () => {
               may also find relevant insights.
             </p>
 
-            <div className="btn btn--white" style={{ margin: "0 auto" }}>
+            <div
+              className="btn btn--white"
+              style={{
+                margin: "0 auto",
+                backgroundColor: "#ff9343",
+                borderColor: "#ff9343",
+              }}
+            >
               Download{" "}
             </div>
           </div>

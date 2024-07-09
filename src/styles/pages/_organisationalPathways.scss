@@ -21,13 +21,13 @@
   background-color: $cohere_black;
   color: $color-white;
   min-height: 55vh;
-}
 
-li {
-  font-family: $font-spacegrotesk;
-  font-size: 2rem !important;
-  padding-top: 3rem;
-  padding-left: 2rem;
+  li {
+    font-family: $font-spacegrotesk;
+    font-size: 2rem !important;
+    padding-top: 3rem;
+    padding-left: 2rem;
+  }
 }
 
 .section-who-should-read {
@@ -38,7 +38,7 @@ li {
 
 .divider-formating {
   text-align: center;
-  padding: 3rem;
+  padding: 1rem;
   margin: auto;
   max-width: 100rem;
 
@@ -50,6 +50,6 @@ li {
   img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
