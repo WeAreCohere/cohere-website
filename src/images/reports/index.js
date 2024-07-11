@@ -19,3 +19,5 @@ export const XPStrategicPlan21 = require("./Xavier-Project-Strategic-Plan-2019-2
 export const AAPImage = require("./Accountability-of-affected-persons.png");
 export const refugeeParticipationReportImg = require("./refugee-participation-report.jpg");
 export const refugeeParticipationReportExecSumImg = require("./refugee-participation-report-exec-sum.jpg");
+
+export const fiveOrganisationalPathwaysImg = require("../organisationalPathways/organisational_pathways_landing.png");
