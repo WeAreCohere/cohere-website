@@ -56,7 +56,7 @@ const Reports = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Link
+                Download
               </a>
               <h3>
                 Five Organisational Pathways For Enabling Meaningful Refugee
