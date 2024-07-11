@@ -15,7 +15,7 @@ import {
   refugeeParticipationReportImg,
   refugeeParticipationReportExecSumImg,
   ProcurementUganda,
-  fiveOrganisationalPathwaysImg,
+  fiveOrganisationalPathwaysImgTwo,
 } from "../images/reports";
 
 import {
@@ -39,7 +39,7 @@ const Reports = () => {
         <div className="matrix">
           <figure className="matrix__item">
             <LazyLoadImage
-              src={fiveOrganisationalPathwaysImg}
+              src={fiveOrganisationalPathwaysImgTwo}
               alt="Five Organisational Pathways For Enabling Meaningful Refugee Participation
 "
               effect="blur"
