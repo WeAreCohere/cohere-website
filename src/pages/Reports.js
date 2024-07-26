@@ -16,6 +16,7 @@ import {
   refugeeParticipationReportExecSumImg,
   ProcurementUganda,
   fiveOrganisationalPathwaysImgTwo,
+  impactReport,
 } from "../images/reports";
 
 import {
@@ -24,6 +25,7 @@ import {
   RefugeeParticipationReport,
   RefugeeParticipationReportExecSummary,
   ThreePathways,
+  impactHighlights,
 } from "../docs";
 
 import { placeHolder } from "../images";
@@ -37,6 +39,31 @@ const Reports = () => {
         </h1>
 
         <div className="matrix">
+          <figure className="matrix__item">
+            <LazyLoadImage
+              src={impactReport}
+              alt="Impact Hightlights Report 2021-2023
+"
+              effect="blur"
+              height="100%"
+              width="100%"
+              className="matrix__img"
+              placeholderSrc={placeHolder}
+            />
+
+            <div className="matrix__description">
+              <a
+                className="btn btn--red"
+                href={impactHighlights}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+              <h3>Impact Hightlights Report 2021-2023</h3>
+            </div>
+          </figure>
+
           <figure className="matrix__item">
             <LazyLoadImage
               src={fiveOrganisationalPathwaysImgTwo}

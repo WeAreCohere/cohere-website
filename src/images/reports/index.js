@@ -22,3 +22,5 @@ export const refugeeParticipationReportExecSumImg = require("./refugee-participa
 
 export const fiveOrganisationalPathwaysImg = require("../organisationalPathways/organisational_pathways_landing.png");
 export const fiveOrganisationalPathwaysImgTwo = require("./Cohere_FB_IG_LinkedIn_Posts.png");
+
+export const impactReport = require("./impact-report-2021-2023.png");
